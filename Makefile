@@ -4,7 +4,7 @@
 # Configuration
 LATEX = xelatex
 BIBER = biber
-MAIN = warranted-inference-in-agi-evaluation
+MAIN = when-benchmark-inferences-do-not-compose
 OUTDIR = .
 
 # Targets

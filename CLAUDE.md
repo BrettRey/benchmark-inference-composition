@@ -10,7 +10,7 @@ This paper develops a target-indexed evaluation discipline for AGI and multidoma
 
 The framework distinguishes the projective claim, its evidence-relative warrant, the worldly dependence that makes it reliable, and any causal explanation. A decision combines projectible factual premises with values, constraints, institutional authority, feasible alternatives, and an action rule.
 
-**Title:** *From Aggregate Scores to Warranted Inference in AGI Evaluation*
+**Title:** *When Benchmark Inferences Do Not Compose: Projectibility in AI Evaluation*
 
 **Preprint:** arXiv:2510.15236 (the October 2025 v1, *From Checklists to Clusters: A Homeostatic Account of AGI Evaluation*) was **withdrawn 2026-07-23** with a retraction reason; its homeostatic-cluster thesis and two proposed measures are disavowed. It is the historical starting point only. The current paper will be posted as a new arXiv submission (see `submission/arxiv-posting-plan.md`).
 

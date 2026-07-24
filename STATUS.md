@@ -6,7 +6,7 @@
 
 **Last updated:** 2026-07-23
 
-**Working title:** *From Aggregate Scores to Warranted Inference in AGI Evaluation*
+**Working title:** *When Benchmark Inferences Do Not Compose: Projectibility in AI Evaluation*
 
 The October 2025 preprint, arXiv:2510.15236, was **withdrawn on 2026-07-23** (`submit/7861781`; arXiv confirmed the withdrawal public 2026-07-23; its homeostatic-cluster thesis retracted) and is the historical starting point only. The live paper is a target-indexed measurement framework, not an HPC-kind argument or a proposal for a universal robustness score, and will be posted as a new arXiv submission rather than as a replacement of the withdrawn v1.
 
