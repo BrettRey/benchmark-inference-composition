@@ -2,13 +2,42 @@
 
 ## Current State
 
-**Phase:** Framework revision complete and shipped; venue preparation pending
+**Phase:** External review + board actioned and follow-up review cleared. Reviewer now says submit. Uncommitted (four sessions' work).
 
-**Last updated:** 2026-07-23
+**Last updated:** 2026-07-28
 
 **Working title:** *When Benchmark Inferences Do Not Compose: Projectibility in AI Evaluation*
 
 The October 2025 preprint, arXiv:2510.15236, was **withdrawn on 2026-07-23** (`submit/7861781`; arXiv confirmed the withdrawal public 2026-07-23; its homeostatic-cluster thesis retracted) and is the historical starting point only. The live paper is a target-indexed measurement framework, not an HPC-kind argument or a proposal for a universal robustness score, and will be posted as a new arXiv submission rather than as a replacement of the withdrawn v1.
+
+### 2026-07-28 Session Notes (follow-up review; overcorrection repaired)
+
+- **The capability demotion was confirmed but its wording overshot.** The draft had said an attribution "has no object, inclusion rule, or period" and that interpretation is not a projection edge; the second **contradicted §2.2's own definition** of a projection as extending "an interpretation, prediction, or explanation." The defensible line is *empirical node vs interpretive claim*, not *projection vs non-projection*. Six sites repaired, and `CLAUDE.md` now carries a standing "don't overstate this" note.
+- **§3.2 retitled Endpoint alignment and warrant transmission** and split into the two groups, so the section states its skeleton directly: the first failure makes composition undefined, the second leaves a defined composition unwarranted.
+- **Equation 1 cleaned up** (links "presented as adjacent"), plus two overstatements pulled back in the Kane paragraph and the abstract.
+- **Reviewer's verdict: submit** rather than commission another rewrite. Expect R\&R; no obvious conceptual ground for rejection.
+- **Build:** 35 pp, 0 errors, 0 undefined, 0 em-dashes. A mid-session biber exit-25 failure was a stale biber cache, not the central bib and not the edits.
+
+### 2026-07-27 Session Notes (external review + review board actioned)
+
+- **Two reviews merged and implemented.** GPT-Sol external review (verdict: plausible *Minds and Machines* paper, expect R\&R) plus a five-reviewer board, 3 Opus and 2 Codex, in `reviews/review-board-construct-node-20260727/`. Merged punch list: `PUNCHLIST-2026-07-27.md`. Full rationale in `DECISIONS.md`.
+- **Governing change: a capability attribution is no longer a node in the chain.** Verified against Kane 2013 pp. 38--39 in `literature/`: for a theory-based interpretation extrapolation drops out, and the construct is a detachable layer rather than a station. The paper already ran this architecture in Table 2, Table 4, the Conclusion, and §2.3's "or omitted"; only §1 and Figure 1 dissented, and both were brought into line. A second construct schema was put to the board and **rejected 5/5**.
+- **Figure 1 redrawn:** four mainline boxes, three arrows, capability attribution above the chain in dashed style; the conflating label "Capability or task claim" removed.
+- **§3.2 is now seven requirements split by provenance:** five fieldwise (composability) plus two on the composed inference (transmission), with endpoint alignment as the governing disjunction. Period and conditions split apart; assumption compatibility separated from condition alignment. Reconciles §3.2 with Appendix B.
+- **The external review's one blocking item is answered by promotion, not invention.** Eq. 3 already required \(Z\perp B\mid D\), which fails under exact endpoint alignment; §3.2 now says so and §3.4 ("Two counterexamples") adds a worked case where every field matches and the chain still fails.
+- **Sourced upgrades:** Kane p. 64 weakest-link contrast (the principle presupposes the inferences *form* a chain); Embretson p. 180 recast as a unit difference. Both quotations read from the PDFs before use. Crooks et al. 1996 deliberately not cited (unverified).
+- **Build:** 34 pp, 0 errors, 0 undefined, 0 em-dashes.
+- **Open:** the ~2-page cut is deferred to Brett (and the board says *keep* Appendix B); Magesh figures still need confirming against the published *JELS* version rather than the 2024 preprint; nothing is committed.
+
+### 2026-07-24 Session Notes (afternoon -- GPT-Pro review, reconstruction, submission-readiness)
+
+- **GPT-Pro review triaged; central charge verified, not trusted.** Two arXiv IDs checked directly: 2510.23191 (Freiesleben & Zezulka) and 2603.15121 (Freiesleben, nomological networks vs Messick--Kane). Both real; novelty gap genuine and decisive. Full triage in `DECISIONS.md`.
+- **Reconstruction adopted as base** (`git mv` → `when-benchmark-inferences-do-not-compose.tex`), organized around **non-composition** (warrant for adjacent links doesn't warrant their composition). Retitled; `Makefile`, `STATUS.md`, `CLAUDE.md` updated. Committed: `b052b2d` (morning concretize pass) and `4cd65f9` (adoption + retitle + triage log).
+- **Freiesleben answered, not conceded** (his target is construct *meaning*; this paper audits a bounded chain with Kane). Canonical projectibility paper already sanctions the Kane move.
+- **Severance from analysis companion accepted** (Brett): three data plots and Zhang's 13.6%/53.2% gone; companion pointer, hashes, code URL, and the known-truth construction retained. Four-states figure redrawn natively in TikZ (three states, matches text). Two conceptual figures, zero external graphics.
+- **Definition aligned to canonical paper:** "degree of warrant for a **bounded** extension"; bearer is a "**bounded projective claim**." The morning's link→projection rename moved this paper toward programme vocabulary, not away.
+- **Submission-readiness pass (UNCOMMITTED at session end):** preamble refreshed from central (was pre-`\aidisclosure`); AI disclosure to page 1; double-blind `\anontrue` toggle (also clears leaking `pdfauthor` metadata); 4 of 5 dropped citations restored with host passages; CLAUDE.md overview/core-argument rewritten; GitHub repo renamed `agi-evaluation-hpc`→`benchmark-inference-composition`; README written (with withdrawn-work note). Build 32 pp, clean.
+- **Bibliography:** 7 verified entries in `references-local.bib` + 7 PDFs in `literature/`; avoided a `/push-bib` collision that would have degraded the central `bean2025measuring` 43-author entry.
 
 ### 2026-07-23 Session Notes
 

@@ -6,9 +6,9 @@ Deep editorial, statistical, and research work is welcome here.
 
 ## Project Overview
 
-This paper develops a target-indexed evaluation discipline for AGI and multidomain AI evaluation. Projectibility is an edge-level notation and audit discipline for empirical or explanatory source--target claims within a unified interpretation-and-use argument. It is not a new validity aspect and does not by itself warrant a decision.
+**The governing claim is non-composition: warrant for adjacent inferential links does not automatically warrant their composition.** A benchmark result is generalized to further cases, interpreted as a capability, extrapolated to other tasks, transported to another system or site, and combined with assumptions about human review and downstream consequences. Recent validity-centred work rightly demands evidence for each link. This paper identifies the further problem at the *interfaces* between them: the target reached by one study may not be the source sampled by the next, the object/population/outcome/conditions may change at the join, and shared data or model lineage can make apparently independent support dependent.
 
-The framework distinguishes the projective claim, its evidence-relative warrant, the worldly dependence that makes it reliable, and any causal explanation. A decision combines projectible factual premises with values, constraints, institutional authority, feasible alternatives, and an action rule.
+Projectibility is **the degree of warrant for a bounded extension from observed to unobserved cases**. Its bearer is a **bounded projective claim**, not a score, benchmark, or system in isolation (this wording is aligned with `papers/drafting/projectibility-history-and-prospects`). Warrant is kept distinct from the worldly relation that makes a projection reliable and from any causal explanation. Projectibility is not a new validity aspect and does not by itself warrant a decision: a decision combines projectible factual premises with values, constraints, institutional authority, feasible alternatives, and an action rule.
 
 **Title:** *When Benchmark Inferences Do Not Compose: Projectibility in AI Evaluation*
 
@@ -18,14 +18,18 @@ The framework distinguishes the projective claim, its evidence-relative warrant,
 
 ### Core Argument
 
-1. **Declare each source--target claim.** Name the interpretation, system and task populations, operators and affected populations, bearer, intervention range, horizon, target distribution, tolerance, failure conditions, and evidential responsibilities before choosing a score.
-2. **Preserve distinct descriptions.** Report Pearson profile correlation, signed level, mean absolute item instability, directional components, and signed worst-tail degradation. Distinguish the absolute tail of conditional case risk from the tail of realized deployment loss.
-3. **Keep estimand modes separate.** A deterministic fixed-set description, a stochastic-response estimand, and a superpopulation inference require different evidence.
-4. **Demonstrate before extrapolating.** The Zhang reanalysis and known-truth simulations show what the quantities distinguish, but don't supply a deployment outcome.
-5. **Match evidence to the inferential relation.** Content, process, structural, external-sample, predictive, causal, and decision evidence answer different premises; an item split, unseen context family, independent lineage, and later release answer different questions.
-6. **Separate scores from models.** Convex weights can define an interpretable score; an optimal predictive or decision model may use negative coefficients, interactions, nonlinearities, or constraints.
-7. **Changing the facet changes the warrant.** Temporal retention, response to feedback, and projection from a base model to a deployed composite require different observations and controls; no universal auxiliary metric is assumed.
-8. **Don't infer mechanism from behaviour.** Stable profiles, retention, or feedback response don't establish representation, consolidation, corrective control, homeostasis, or kind membership.
+1. **Warranted links don't make a warranted chain.** This is the paper's distinctive contribution. Support for two adjacent projections licenses their composition only under stated conditions; otherwise two sound studies remain parallel rather than joinable.
+2. **Type the nodes and edges.** A \term{type} is a template with labelled fields; the field names are questions, not answers; a \term{node} is one instance with the fields filled. An evaluation argument is a chain over four distinct empirical objects: benchmark responses, outputs of a tool-using application, work after human review, and consequences under a policy. Evidence attaches to an arrow, not to the chain.
+3. **A capability attribution is not an \emph{empirical} node.** It's an interpretive claim about a bearer, supported where appropriate by content, process, causal, and nomological evidence, and it may be a terminal conclusion or a substantive premise. What it doesn't do is specify the downstream population of cases, the criterion outcome, or the conditions under which the capability is expected to predict that outcome. Kane (2013, pp. 38--39) is two ladders from one base: for a theory-based interpretation extrapolation *drops out*, and the construct is a detachable layer, not a station. Figure 1 draws it above the chain. **Don't overstate this** (correction logged 2026-07-28): an attribution does have a bearer and can have temporal and circumstantial scope, so never write that it "has no object, inclusion rule, or period"; and never deny that interpretation is a projection, since §2.2 defines a projection as extending an *interpretation*, prediction, or explanation. The defensible line is empirical node vs interpretive claim, not projection vs non-projection.
+4. **§3.2 is organized as endpoint alignment then warrant transmission.** Five requirements compare the fields of the shared endpoint (object, population, conditions, outcome, period) and settle whether the links meet; two concern the composed inference (assumption and effect-modifier compatibility, dependence and uncertainty propagation) and settle whether warrant crosses. The first failure makes the composition *undefined*; the second leaves a defined composition *unwarranted*. \term{Endpoint alignment} is not an eighth item. A shared noun (\mention{legal reasoning}, \mention{draft quality}) is not an interface. Say *requirements*, not *conditions*: \term{condition} is reserved for a node's operating conditions and for baseline/altered experimental conditions. These are **necessary** conditions; don't phrase them as sufficient.
+5. **Two failures, not one.** *Spurious adjacency*: the links never meet, so there is no composite to warrant. *Transmission failure*: the endpoints match in every field and warrant still fails to cross, because an effect modifier was dropped at the join. Equation 3 gives the formal case, \(Z\perp B\mid D\), which can fail under exact alignment. §3.4 gives one counterexample of each kind.
+6. **Composition, convergence, and replacement are different relations.** Convergent evidence bears on one claim without forming a chain; direct local evidence can *replace* an upstream projection without retroactively validating it.
+7. **Aggregation can destroy interface evidence.** A stable mean is compatible with no change, offsetting change, and unchanged serious failure. The source report must retain the resolution a declared downstream claim needs. This is why the statistical apparatus is in the paper at all; it is not a general scorecard.
+8. **Match evidence to the link being claimed.** Content, process, structural, external-sample, predictive, causal, and decision evidence answer different premises; an item split, unseen alteration family, independent lineage, and later release answer different questions.
+9. **Divide evidential responsibility.** Developers report exactly what was tested; deployers supply task samples, review records, policy comparisons, and outcome monitoring. Neither party's evidence is sufficient for the whole chain.
+10. **Don't infer mechanism from behaviour.** Stable profiles, retention, or feedback response don't establish representation, consolidation, corrective control, homeostasis, or kind membership.
+
+**Answering the nearest rival:** Freiesleben (2026) argues that nomological networks beat the Messick--Kane inferential account for LLM capability benchmarks. Engage, don't concede. His target is what a capability *construct means*; this paper makes no construct attribution and uses Kane to audit a bounded inference chain, which is what that framework is for. Successful nomological validation would warrant one link and leave composition untouched.
 
 ### Metric Conventions
 
@@ -47,6 +51,11 @@ The framework distinguishes the projective claim, its evidence-relative warrant,
 | Hendrycks et al. (2025) | Motivating ten-domain AGI battery |
 | Zhang, Koyejo, and Yang (2026), arXiv v2 | Aggregate cancellation and released trial data |
 | Raji et al. (2021); Bowman and Dahl (2021) | Broad benchmark and construct-validity problems |
+| Liu et al. (2024) | Evidence-centred benchmark design (a neighbouring framework) |
+| Freiesleben and Zezulka (2025), arXiv:2510.23191 | Construct validity for benchmark inference; nearest overlap with the diagnosis |
+| Freiesleben (2026), arXiv:2603.15121 | Nomological networks over Messick--Kane; the direct objection to answer |
+| Salaudeen et al. (2025), arXiv:2505.10573 | Claim-aware validity framework for AI evaluation |
+| Bean et al. (2025) | Construct validity across 445 LLM benchmarks |
 | Brennan (2001) | Multi-facet generalizability design |
 | Acerbi and Tasche (2002); Rockafellar and Uryasev (2002) | Expected-shortfall context for WTD |
 | Meredith (1993) | Measurement invariance |
