@@ -21,6 +21,7 @@ The October 2025 preprint, arXiv:2510.15236, was **withdrawn on 2026-07-23** (`s
 - **Build:** 35 pp, no undefined citations or references, and `qpdf --check` clean; only the pre-existing companion-URL and bibliography box warnings remain.
 - **Final release checks:** `make`, all 19 empirical-package tests, `qpdf --check`, and `git diff --check` pass.
 - **Substantive revision shipped:** commit `096e81e` contains the synchronized source, PDF, empirical-companion documentation, bibliography additions, and final review record.
+- **Magesh source check closed:** the 2025 *Journal of Empirical Legal Studies* version confirms the paper's cited 17--33% hallucination range, more-than-60% incomplete-answer result, and absence of accompanying vendor evidence.
 
 ### 2026-07-28 Session Notes (follow-up review; overcorrection repaired)
 
@@ -41,7 +42,7 @@ The October 2025 preprint, arXiv:2510.15236, was **withdrawn on 2026-07-23** (`s
 - **The external review's one blocking item is answered by promotion, not invention.** Eq. 3 already required \(Z\perp B\mid D\), which fails under exact endpoint alignment; §3.2 now says so and §3.4 ("Two counterexamples") adds a worked case where every field matches and the chain still fails.
 - **Sourced upgrades:** Kane p. 64 weakest-link contrast (the principle presupposes the inferences *form* a chain); Embretson p. 180 recast as a unit difference. Both quotations read from the PDFs before use. Crooks et al. 1996 deliberately not cited (unverified).
 - **Build:** 34 pp, 0 errors, 0 undefined, 0 em-dashes.
-- **Open:** the ~2-page cut is deferred to Brett (and the board says *keep* Appendix B); Magesh figures still need confirming against the published *JELS* version rather than the 2024 preprint; nothing is committed.
+- **Open at the time:** the ~2-page cut was deferred to Brett (and the board said *keep* Appendix B); the Magesh version-of-record check was completed on 2026-07-28.
 
 ### 2026-07-24 Session Notes (afternoon -- GPT-Pro review, reconstruction, submission-readiness)
 

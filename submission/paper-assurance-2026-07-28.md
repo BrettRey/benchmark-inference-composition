@@ -9,7 +9,7 @@ canonical_pdf: when-benchmark-inferences-do-not-compose.pdf
 source_commit: 096e81ee1118b1c61e0dc7eeca1fd4afd78d79f1
 source_sha256: 6fef6b42b5e540fa86c1d580127909d06247d5721c38f5ee66857893d92b7161
 pdf_sha256: c732cfadb8c1d6ad81f301a7ffd872289a5baea6ba81870451c207a847701f65
-checked_at: '2026-07-28T13:12:42-04:00'
+checked_at: '2026-07-28T13:16:20-04:00'
 dirty_paths: []
 decision_owner: Brett Reynolds
 decision_status: pending
@@ -19,7 +19,6 @@ review_artifacts: []
 unresolved_items:
   - The named 2026-07-27 review run does not preserve the complete GPT-Sol and three Opus raw outputs, shared prompt or task specification, manifest, and inspected source hashes. Its two surviving Codex outputs therefore cannot establish a complete board lineage.
   - The 2026-07-24 decision selects Minds and Machines, but the current venue package and disclosure requirements have not yet been applied or checked.
-  - The Magesh figures still require confirmation against the published JELS article rather than the 2024 preprint.
 invalidation_triggers:
   - Canonical source or PDF changes.
   - The Magesh source check changes a claim, number, or attribution.
@@ -36,7 +35,7 @@ This pilot asks whether the exact source and PDF named above are ready to become
 
 ## Bounded readiness claim
 
-The exact substantive revision is fixed and has passed the project build, empirical tests, PDF integrity check, and diff check. This does not yet authorize a portal submission: the current *Minds and Machines* package requirements and one published-source check remain unresolved. The record does not establish truth, publishability, reviewer consensus, or likely acceptance.
+The exact substantive revision is fixed and has passed the project build, empirical tests, PDF integrity check, and diff check. The cited Magesh results have also been confirmed against the 2025 version of record. This does not yet authorize a portal submission: the current *Minds and Machines* package requirements remain to be applied and checked. The record does not establish truth, publishability, reviewer consensus, or likely acceptance.
 
 ## Object
 
@@ -49,7 +48,7 @@ The canonical source and PDF hashes identify the objects committed at `096e81ee1
 | 2026-07-27 merged review punch list | Records the synthesis and actions attributed to GPT-Sol plus a five-reviewer board | `PUNCHLIST-2026-07-27.md` (SHA-256 `9c156a9a22eb117d830063eef1dfcec97af9d846433ec9a97c112e37487ab3f5`) | No exact source hash recorded | unavailable for gate |
 | Surviving Codex hostile review | Preserves one complete reviewer output | `reviews/review-board-construct-node-20260727/codex-hostile.md` (SHA-256 `4a2c2574beb19867948de87b2751979ebb7425d81968e24868a1d42f73da5d7a`) | No durable prompt or exact source hash recorded | unavailable for gate |
 | Surviving Codex measurement review | Preserves one complete reviewer output | `reviews/review-board-construct-node-20260727/codex-philosopher-of-measurement.md` (SHA-256 `a0d6be803a9b16a2e0b09e485200fa11a16f0763f3d4ba305be3eb03016ef5c6`) | No durable prompt or exact source hash recorded | unavailable for gate |
-| Published-source confirmation | Would support the Magesh numerical and attribution claims | Published *JELS* article | Not yet checked | unresolved |
+| Published-source confirmation | Supports the Magesh 17--33% hallucination range, more-than-60% incomplete-answer result, and absence-of-vendor-evidence attribution | `literature/magesh_etal_2025_jels_version_of_record.pdf` (SHA-256 `f7ae9796388fb5b71e30d8ea7e8f1914fce4aee57d17a9370287a0f5432b9d0b`) | *JELS* 22, 216--242 (2025), abstract and p. 217 | verified for cited claims |
 | Venue decision | Selects the primary target and records the principal fit judgment | `DECISIONS.md` (2026-07-24 entry; SHA-256 `522e32c7d3d651aed45fcf6b87f3fec5e0d323578f22e92a4ee3b7579a68c364`) | Commit `096e81e` | target selected; package unresolved |
 
 None of these candidates appears in `evidence_artifacts` or `review_artifacts`, because the machine-readable entries require a bounded support statement, interface relation, durable artifact hash, and matching inspected-source hash. Listing an old output in prose does not convert it into current evidence.
