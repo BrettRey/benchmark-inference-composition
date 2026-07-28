@@ -2,7 +2,7 @@
 
 ## Current State
 
-**Phase:** Final revision complete and release checks passed. Primary journal venue: *Minds and Machines*. New arXiv posting and journal submission remain to be completed.
+**Phase:** Final substantive revision fixed at `096e81e` and release checks passed. Primary journal venue: *Minds and Machines*. New arXiv posting and journal submission remain to be completed.
 
 **Last updated:** 2026-07-28
 
@@ -20,6 +20,7 @@ The October 2025 preprint, arXiv:2510.15236, was **withdrawn on 2026-07-23** (`s
 - **Empirical checks:** 19/19 tests pass; all 64 source files remain revision- and hash-locked.
 - **Build:** 35 pp, no undefined citations or references, and `qpdf --check` clean; only the pre-existing companion-URL and bibliography box warnings remain.
 - **Final release checks:** `make`, all 19 empirical-package tests, `qpdf --check`, and `git diff --check` pass.
+- **Substantive revision shipped:** commit `096e81e` contains the synchronized source, PDF, empirical-companion documentation, bibliography additions, and final review record.
 
 ### 2026-07-28 Session Notes (follow-up review; overcorrection repaired)
 
