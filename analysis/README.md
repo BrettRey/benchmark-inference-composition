@@ -1,15 +1,19 @@
 # Empirical companion
 
-This directory tests the paper's proposed reporting discipline without adding
+This directory supports the paper's released-output illustration without adding
 new model generations or treating the released benchmarks as external-validity
-evidence. It does four bounded things:
+evidence. Its paper-facing core does three bounded things:
 
 1. reanalyses all 32 model-by-benchmark cells released by Zhang, Koyejo, and
    Yang;
-2. compares raw, null-referenced, and held-out split-tail estimators;
+2. compares raw, null-referenced, and response-half tail estimators;
 3. simulates cancellation, known latent effects, trial/tail sensitivity, and
-   stable absolute failure; and
-4. tests how Pearson profile correlation behaves with only ten domain means.
+   stable absolute failure.
+
+A supplementary module tests how Pearson profile correlation behaves with only
+ten domain means. It is retained because the paper discusses multidomain
+profiles, but the current manuscript doesn't use its results as empirical
+support.
 
 The package does **not** validate projectibility to deployment outcomes, CHC
 structure for machines, target-specific weights, construct validity, or any
@@ -48,7 +52,7 @@ python3 -m venv .venv-analysis
 ```
 
 The tests cover metric signs and tail cardinality, exact cancellation,
-untruncated negative corrections, deterministic split-tail and absolute-tail
+untruncated negative corrections, deterministic response-half and absolute-tail
 cases, constant-profile guards, source-lock completeness, pairing, and the
 known-truth scenario definitions.
 
@@ -59,16 +63,23 @@ A fast smoke run uses one released cell and reduced Monte Carlo counts:
 ```bash
 .venv-analysis/bin/python -m analysis.simulate_instability --profile smoke
 .venv-analysis/bin/python -m analysis.simulate_pss --profile smoke
+.venv-analysis/bin/python -m analysis.simulate_bootstrap_coverage --profile smoke
 .venv-analysis/bin/python -m analysis.reanalyse_zhang --profile smoke
+.venv-analysis/bin/python -m analysis.summarize_evidence
+.venv-analysis/bin/python -m analysis.plot_hidden_distinctions
+.venv-analysis/bin/python -m analysis.plot_stable_mean_states
 ```
 
-The publication-oriented settings are:
+The standard settings used for the committed companion outputs are:
 
 ```bash
 .venv-analysis/bin/python -m analysis.simulate_instability --profile standard
 .venv-analysis/bin/python -m analysis.simulate_pss --profile standard
+.venv-analysis/bin/python -m analysis.simulate_bootstrap_coverage --profile standard
 .venv-analysis/bin/python -m analysis.reanalyse_zhang --profile standard
 .venv-analysis/bin/python -m analysis.summarize_evidence
+.venv-analysis/bin/python -m analysis.plot_hidden_distinctions
+.venv-analysis/bin/python -m analysis.plot_stable_mean_states
 ```
 
 The equivalent shortcuts are `make -C analysis PYTHON=.venv-analysis/bin/python
@@ -87,7 +98,7 @@ Refresh the source lock only as a deliberate provenance update:
 
 ## Estimands kept separate
 
-For item (i), let \(\delta_i\) be perturbed minus baseline success
+For item \(i\), let \(\delta_i\) be perturbed minus baseline success
 probability. The scripts report:
 
 - signed change: \(N^{-1}\sum_i\delta_i\);
@@ -105,12 +116,12 @@ centred on the baseline response distribution, not a general bias correction und
 nonnull alternatives. Internal output columns retain the authors' ``adjusted`` label
 for source compatibility.
 
-The split-tail procedure selects items on one random half of both conditions
+The response-half procedure selects items on one random half of both conditions
 and measures them on the disjoint halves, then swaps the halves and averages.
 It removes reuse of the same noise for selection and measurement. It is
 unbiased for the latent effect of the *noisy-selected set*, which can differ
 from the oracle tail selected using latent effects. The simulations report both
-targets rather than describing split-tail WTD as a universal correction.
+targets rather than describing response-half WTD as a universal correction.
 
 The case-risk tail is separate because a system can be stably poor:
 condition-to-condition WTD can be zero while perturbed-condition loss remains
@@ -121,7 +132,7 @@ high. Both raw and cross-fitted versions are reported.
 `outputs/zhang_reanalysis/` contains:
 
 - `main_reanalysis.csv` and `.tex`: the 32 released cells, raw/pseudo-null/null-referenced
-  INS and WTD, split-tail WTD, split-half reliability, and case-risk tail;
+  INS and WTD, response-half WTD, split-half reliability, and case-risk tail;
   the directional components `f_plus` and `f_minus`, which sum to `ins_raw` and
   differ by `signed_delta`; and 95% item-bootstrap intervals (`*_boot_lo`,
   `*_boot_hi`, `*_boot_sd`) for signed change, INS, WTD, and the case-risk tail.
@@ -144,6 +155,9 @@ data. `stable_mean_states.pdf` is a constructed illustration, not data: four
 item-change distributions with matched means and the worst-decile absolute loss
 each implies. All figures share `figstyle.py`, which mirrors the parent
 repository's house palette and is duplicated so this package reproduces alone.
+These generated figures and tables are supplementary companion artifacts; the
+current manuscript doesn't embed them. Its stable-state figure is drawn
+directly in TikZ.
 
 `outputs/instability/` contains the known-truth summaries, the explicit
 cancellation construction, the stable-failure comparison, trial-count/tail-q
@@ -159,12 +173,14 @@ selection on response noise shifts the statistic far more than item resampling
 varies it. Read a tail interval as item-sampling uncertainty around the raw
 statistic, never as an interval for the latent tail.
 
-`outputs/profile_correlation/` contains replicate- and summary-level ten-domain
-results, a compact LaTeX table, sensitivity results, run metadata, and three
-vector PDF figures. The conventional Fisher interval is included only as a comparator.
+The supplementary `outputs/profile_correlation/` module contains replicate- and
+summary-level ten-domain results, a compact LaTeX table, sensitivity results,
+run metadata, and three vector PDF figures. The conventional Fisher interval is
+included only as a comparator.
 The paired nested bootstrap resamples items within domains and trials within
 items. Neither procedure turns the synthetic domains into evidence for CHC
-transport or machine capability structure.
+transport or machine capability structure, and the current manuscript cites no
+result from this module.
 
 ## Limits on manuscript claims
 

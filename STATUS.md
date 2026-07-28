@@ -2,7 +2,7 @@
 
 ## Current State
 
-**Phase:** External review + board actioned and follow-up review cleared. Reviewer now says submit. Uncommitted (four sessions' work).
+**Phase:** Final revision complete and release checks passed. Primary journal venue: *Minds and Machines*. New arXiv posting and journal submission remain to be completed.
 
 **Last updated:** 2026-07-28
 
@@ -10,13 +10,26 @@
 
 The October 2025 preprint, arXiv:2510.15236, was **withdrawn on 2026-07-23** (`submit/7861781`; arXiv confirmed the withdrawal public 2026-07-23; its homeostatic-cluster thesis retracted) and is the historical starting point only. The live paper is a target-indexed measurement framework, not an HPC-kind argument or a proposal for a universal robustness score, and will be posted as a new arXiv submission rather than as a replacement of the withdrawn v1.
 
+### 2026-07-28 Session Notes (empirical companion synchronized)
+
+- **Paper-facing empirical core made explicit:** the 32-cell released-output reanalysis, estimator comparison, and cancellation/stable-loss simulations support §5's information-preservation argument without supplying external-validity evidence.
+- **Profile-correlation analysis retained as supplementary:** it remains relevant to multidomain profiles but supplies no empirical premise used by the current manuscript.
+- **Tail wording aligned with the companion:** same-response selection and estimation can inflate the apparent tail; the response-half estimate isn't presented as recovery of an oracle latent tail.
+- **Reproduction instructions synchronized with `analysis/Makefile`:** bootstrap coverage, evidence summaries, and both plotting steps are now included.
+- **Cross-domain covariance acknowledged in §6.3:** the Ilić--Gignac positive manifold is treated as genuine evidence that performance in one tested domain can inform performance in others within a sampled model--task matrix, without being allowed to imply unrestricted reach.
+- **Empirical checks:** 19/19 tests pass; all 64 source files remain revision- and hash-locked.
+- **Build:** 35 pp, no undefined citations or references, and `qpdf --check` clean; only the pre-existing companion-URL and bibliography box warnings remain.
+- **Final release checks:** `make`, all 19 empirical-package tests, `qpdf --check`, and `git diff --check` pass.
+
 ### 2026-07-28 Session Notes (follow-up review; overcorrection repaired)
 
 - **The capability demotion was confirmed but its wording overshot.** The draft had said an attribution "has no object, inclusion rule, or period" and that interpretation is not a projection edge; the second **contradicted §2.2's own definition** of a projection as extending "an interpretation, prediction, or explanation." The defensible line is *empirical node vs interpretive claim*, not *projection vs non-projection*. Six sites repaired, and `CLAUDE.md` now carries a standing "don't overstate this" note.
 - **§3.2 retitled Endpoint alignment and warrant transmission** and split into the two groups, so the section states its skeleton directly: the first failure makes composition undefined, the second leaves a defined composition unwarranted.
 - **Equation 1 cleaned up** (links "presented as adjacent"), plus two overstatements pulled back in the Kane paragraph and the abstract.
 - **Reviewer's verdict: submit** rather than commission another rewrite. Expect R\&R; no obvious conceptual ground for rejection.
-- **Build:** 35 pp, 0 errors, 0 undefined, 0 em-dashes. A mid-session biber exit-25 failure was a stale biber cache, not the central bib and not the edits.
+- **Conclusion widow cleared** with `\enlargethispage{4\baselineskip}` (not `\looseness`, which recovered one line and backfired on the final paragraph); paper back to **34 pp**. That macro is page-anchored, so re-check p. 28 after any edit to §8--§9.
+- **Shipped `b56a396`** to master and origin, carrying four sessions in one commit. Working tree clean.
+- **Build:** 34 pp, 0 errors, 0 undefined, 0 em-dashes, abstract 233 words. A mid-session biber exit-25 failure was a stale biber cache, not the central bib and not the edits.
 
 ### 2026-07-27 Session Notes (external review + review board actioned)
 
@@ -72,7 +85,7 @@ An aggregate can describe its construction sample without supporting a broader i
 2. Make the law-firm deployment a running example and distinguish construction sample, standardized evaluation universe, and broader target.
 3. Separate item, task-domain, context, system, operator/site, temporal, causal, consequence, and decision relations rather than treating all as generic generalization.
 4. Record crossed or nested sampling facets and distinguish fixed-set description, stochastic-response estimation, and population inference.
-5. Preserve profile correlation, signed level, item instability, directional components, worst-tail degradation, case-risk tails, and realized-loss tails as non-substitutable outputs.
+5. Preserve signed level, item instability, directional components, worst-tail degradation, case-risk tails, and realized-loss tails as non-substitutable outputs; retain profile correlation as a supplementary multidomain analysis.
 6. Demonstrate those distinctions through a locked reanalysis of all 32 released Zhang comparisons and known-truth simulations while explicitly withholding any external-projection claim.
 7. Match the statistical row and outer holdout to the intended projection; distinguish descriptive aggregates, measurement interpretations, predictive models, value models, and decisions.
 8. Treat CHC as an organizing content taxonomy unless factor structure, cross-system comparability, and AGI interpretation receive their own evidence.
@@ -81,7 +94,7 @@ An aggregate can describe its construction sample without supporting a broader i
 
 ## Measurement Decisions
 
-- Report Pearson \(r\) directly; the former unit-interval PSS transform is retired.
+- In the supplementary profile analysis, report Pearson \(r\) directly; the former unit-interval PSS transform is retired.
 - WTD is signed worst-tail degradation, an expected-shortfall-like change statistic. It is not an absolute harm measure.
 - WTL is a separate absolute, target-specific worst-tail loss. Report baseline and perturbed levels.
 - If item inclusion probabilities differ, use design weights and define tail mass over the target population.
@@ -95,8 +108,8 @@ An aggregate can describe its construction sample without supporting a broader i
 - Reframed projectibility within validity; added task/item populations, decision structure, facet-specific holdouts, generalizability theory, causal transport, measurement invariance, and expected-shortfall context.
 - Added absolute WTL, renamed WTD, retired PSS and the backsliding share, and made descriptive-score, measurement, predictive-model, value-model, and decision distinctions explicit.
 - Added a reproducible empirical package under `analysis/`: arXiv v2, the source commit, and 64 Parquet revisions/hashes are pinned; cached source data are excluded from version control.
-- Reproduced all 32 released comparisons within rounding-level discrepancies and added null, sparse-collapse, stable-poor, and ten-domain profile-correlation simulations.
-- Passed 14/14 empirical tests and verified 64/64 locked file hashes (294,033,162 bytes).
+- Reproduced all 32 released comparisons within rounding-level discrepancies and added null, sparse-collapse, and stable-poor simulations; retained the ten-domain profile-correlation study as supplementary analysis.
+- Passed 19/19 empirical tests and verified 64/64 locked file hashes (294,033,162 bytes).
 - Retained the Lean companion in the repository as an implementation check, but removed it from the paper's main intellectual case.
 - Updated recent references and validated all cited keys. Biber datamodel validation passes.
 - Acquired and audited the relevant primary literature locally, including Goodman, Messick, Kane, Brennan, Embretson, CHC sources, transportability, benchmark-validity work, expected shortfall, Zhang et al., and related current AI-evaluation papers. A library scan of *Validity* has been requested separately.
@@ -108,8 +121,7 @@ An aggregate can describe its construction sample without supporting a broader i
 
 ## Next Steps
 
-- Choose the submission venue. *Minds and Machines* remains a strong conceptual fit; a technical ML venue would likely require validation against an external projection target.
-- Apply the selected venue's formatting and disclosure requirements, then run the submission gate.
+- Prepare and submit the journal package to *Minds and Machines*, the primary venue selected on 2026-07-24; apply its current formatting and disclosure requirements, then run the submission gate.
 - Review the requested library scan of *Validity* when it arrives and incorporate it only if it changes the argument or source support.
-- Decide whether to rename the GitHub repository, whose URL still contains the historical agi-evaluation-hpc slug.
-- Update the arXiv version and public status surfaces when the revision is ready to post.
+- Tag and archive the empirical companion, with a locked environment and a release DOI, when the submission commit is fixed.
+- Post the paper as a new arXiv submission and update public status surfaces when the new identifier exists.
