@@ -1,14 +1,55 @@
+---
+slug: agi-evaluation
+kind: paper
+title: 'When Benchmark Inferences Do Not Compose: Projectibility in AI Evaluation'
+stage: complete
+external: preprint
+blocked_on:
+- brett-decision
+updated: 2026-07-28
+source:
+- STATUS.md
+- PORTFOLIO.md
+venue: Minds and Machines
+preprints:
+- arxiv:2607.26159
+next_action: Prepare and submit the journal package to Minds and Machines; apply current formatting/disclosure
+  requirements and run the submission gate
+notes: 'blocked_on is UNCLEAR between two readings. STATUS.md''s own "Next Steps" reads as immediately
+  actionable: "Prepare and submit the journal package to Minds and Machines, the primary venue selected
+  on 2026-07-24 ... then run the submission gate" -- nothing there names a blocker, which would support
+  blocked_on: none. But PORTFOLIO.md:302 says "These can''t all be under review at M&M at once; sequence
+  them or retarget one before submitting" (this paper plus Delegation Assurance and Truth-Tracking Profiles),
+  and adds that Delegation Assurance''s own "tag/preprint posting is currently held pending an adversarial
+  code-review repair (2026-07-29) ... so the AGI paper''s preprint may end up first regardless" -- which
+  reads as a brett-decision blocker on cross-project sequencing. Recording both readings rather than reconciling
+  them. Separately (not UNCLEAR, reasoned through): v1 arXiv:2510.15236 was withdrawn 2026-07-23 ("its
+  homeostatic property-cluster account and proposed centrality-prior and cluster-stability measures are
+  withdrawn"), but STATUS.md is explicit that the current paper is "a brand-new arXiv identifier, not
+  a replacement of withdrawn v1 (2510.15236), per the 2026-07-23 decision." The withdrawal attaches to
+  the superseded 2025 preprint version, not to the project''s current state, so external is set to preprint
+  (arXiv:2607.26159, posted 2026-07-28), not withdrawn. RESOLVED to [brett-decision] by ADJUDICATION 2026-07-30.
+  Not venue-decision: the venue is settled, per this project''s DECISIONS.md, "2026-07-24 (venue fit reassessed
+  after the legal turn; stay Minds and Machines)". The sequencing question is live, unresolved, names
+  this paper specifically, and only Brett can settle it. One thing to flag rather than bury: the constraint
+  is recorded ONLY at portfolio level. This project''s STATUS.md, DECISIONS.md and CLAUDE.md never mention
+  the other two M&M papers (grepped for "Delegation Assurance", "Truth-Tracking Profiles", "sibling",
+  "concurrent", "at once", "simultaneous"; zero hits), so read on its own documents the answer would be
+  []. That is the documentation gap the batch-10 entries fix: once delegation-assurance is in the registry,
+  by-venue/ shows the collision without anyone having to remember to write it down.'
+---
+
 # STATUS.md -- AGI Evaluation
 
 ## Current State
 
-**Phase:** Final substantive revision fixed at `096e81e` and release checks passed. Primary journal venue: *Minds and Machines*. New arXiv posting and journal submission remain to be completed.
+**Phase:** **New arXiv preprint posted 2026-07-28: arXiv:2607.26159 [cs.AI]** (cross-listed cs.CY, cs.LG), submission `submit/7880182`, announced Tue 28 Jul 2026 18:07:04 UTC. 35 pp, 2 figures, 5 tables. DOI: https://doi.org/10.48550/arXiv.2607.26159. This is a brand-new arXiv identifier, not a replacement of withdrawn v1 (2510.15236), per the 2026-07-23 decision. Comments field states it plainly: "supersedes arXiv:2510.15236, whose homeostatic property-cluster account and proposed centrality-prior and cluster-stability measures are withdrawn. The argument, apparatus, and empirical companion are new." Primary journal venue: *Minds and Machines* — journal submission itself has NOT happened yet, only the arXiv preprint.
 
 **Last updated:** 2026-07-28
 
-**Working title:** *When Benchmark Inferences Do Not Compose: Projectibility in AI Evaluation*
+**Title:** *When Benchmark Inferences Do Not Compose: Projectibility in AI Evaluation*
 
-The October 2025 preprint, arXiv:2510.15236, was **withdrawn on 2026-07-23** (`submit/7861781`; arXiv confirmed the withdrawal public 2026-07-23; its homeostatic-cluster thesis retracted) and is the historical starting point only. The live paper is a target-indexed measurement framework, not an HPC-kind argument or a proposal for a universal robustness score, and will be posted as a new arXiv submission rather than as a replacement of the withdrawn v1.
+The October 2025 preprint, arXiv:2510.15236, was **withdrawn on 2026-07-23** (`submit/7861781`; arXiv confirmed the withdrawal public 2026-07-23; its homeostatic-cluster thesis retracted) and is the historical starting point only. The live paper is a target-indexed measurement framework, not an HPC-kind argument or a proposal for a universal robustness score, and has now been posted as a new arXiv submission rather than as a replacement of the withdrawn v1.
 
 ### 2026-07-28 Session Notes (empirical companion synchronized)
 
