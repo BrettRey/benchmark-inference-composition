@@ -690,3 +690,66 @@ Format: `## YYYY-MM-DD` then bullet points with **bold topic** and brief rationa
   simulation what it could have shown in data it already had would have had a free shot. The section
   now reports the data it has, at the scope it can defend, and says what the simulation can't do.
 - **Build:** 33 pp, 13,203 words, 0 undefined, 0 em-dashes.
+
+## 2026-08-08 (novelty reframe propagated; the abstract had only half of it)
+
+- **Brett asked whether the abstract was up to date after the Kane reframe. It wasn't.** The
+  contribution sentence in the second paragraph had been replaced, but the discovery framing
+  survived in four other places, each asserting what §2.3 now concedes away:
+  - §1's heading, \enquote{The Missing Problem: Composition}, which claims nobody has it. Now
+    \enquote{Composition as a Distinct Problem}.
+  - The abstract's first paragraph, \enquote{This paper identifies a further epistemic problem}. Now
+    \enquote{takes up a problem those approaches leave to the analyst}.
+  - §1's \enquote{The central claim of this paper is a non-composition principle}, which is exactly
+    what the reviewer said to stop saying. Now \enquote{The failure mode has a compact statement}.
+  - The Conclusion's \enquote{This paper adds a non-composition principle}. Now
+    \enquote{takes up what that correction leaves to the analyst, the joins between separately
+    produced claims, and gives them a representation and an audit}.
+- **Two seams from my own earlier edits, caught on the read.** §2.3 said the principle \enquote{is
+  not a gap in argument-based validity} and then, two sentences later, \enquote{shows where the
+  remaining gap lies}; the second now reads \enquote{shows what still has to be established}. And
+  the relocated contribution paragraph had \enquote{What that situation needs is an operational
+  one}, where \enquote{one} had no antecedent.
+- **Lesson worth keeping:** replacing the sentence a reviewer quotes is not the same as making the
+  change they asked for. Four of the five sites carrying the overclaim weren't the one quoted.
+- **Build:** 33 pp, 13,221 words, abstract 211, 0 undefined, 0 em-dashes, qpdf clean. Uncommitted.
+
+## 2026-08-08 (second external review: submit after a focused pass; six items, four applied)
+
+- **Reviewer moved from \enquote{strong major revision} to \enquote{submit after a focused final
+  revision}**, and named the Kane reframe as the biggest improvement. They reviewed a version behind
+  the working tree, so two of their six items were already done: the Kane-transition wording
+  (\enquote{where the remaining gap lies}, \enquote{an operational one}) and the Conclusion's
+  \enquote{This paper adds a non-composition principle}. Verified absent before acting.
+- **The one that mattered was mine, written this session.** \enquote{The neighbouring frameworks
+  audit links one at a time and carry no interface predicate} withdrew the Kane concession one
+  paragraph after making it, which is the single place a Kane-oriented reviewer could say the paper
+  takes back what it conceded. Now: neighbouring frameworks *can* represent the assumptions an
+  interface requires, and this audit makes the interface an explicit and reusable object of
+  declaration and diagnosis. Table~1's audit row likewise dropped \enquote{rather than left to the
+  analyst}, a false contrast since every method leaves analysis to an analyst; it now reads
+  \enquote{Supplies an explicit interface record and diagnostic classification}. Note the reviewer's
+  suggested wording used \enquote{the present audit}, which house style bans, so it was reworded
+  rather than pasted.
+- **Scope of \term{projection} settled** where the formalism starts: used broadly in §2.2 for
+  validity inferences reaching beyond the source observations, while the node-and-edge formalism
+  represents the empirical subset whose endpoints can serve as interfaces. That preserves the
+  Goodman connection without letting \term{projectibility} become a name for every inferential
+  question.
+- **\enquote{It can be omitted because it isn't an empirical endpoint} replaced.** The claim isn't
+  that a capability attribution is dispensable; it's that the analysis can proceed without one
+  wherever the empirical interfaces are represented directly.
+- **Multiplicity made statistically exact.** Registering the family of four in advance is not
+  familywise control. The paper now says the four claims are interpreted separately and the
+  procedure makes no family-level false-confirmation guarantee, and points a firm that needs one to
+  simultaneous bounds or a hierarchical analysis.
+- **The released-data sentence was imprecise and is now named correctly.** An item set doesn't
+  \enquote{move} by seven points. The quantity is item instability, the paper's own defined
+  \(\instab=F^++F^-\), so the sentence now reads median absolute signed change .0068 against median
+  item instability .0678.
+- **Still optional per the reviewer, still deferred:** the §6 trim of 10--15\% and the §7 overlap,
+  which they now judge to have defensible separate functions (procedure, record, diagnostic
+  prompts).
+- **Build:** 34 pp, 13,305 words, 0 undefined, 0 em-dashes, no banned self-reference. The conclusion
+  runs seven lines onto p.~30 with the appendix at p.~31, which is ordinary setting rather than a
+  widow. Uncommitted.
