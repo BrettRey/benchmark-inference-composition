@@ -45,7 +45,13 @@ notes: 'blocked_on is UNCLEAR between two readings. STATUS.md''s own "Next Steps
 
 **Phase:** **New arXiv preprint posted 2026-07-28: arXiv:2607.26159 [cs.AI]** (cross-listed cs.CY, cs.LG), submission `submit/7880182`, announced Tue 28 Jul 2026 18:07:04 UTC. 35 pp, 2 figures, 5 tables. DOI: https://doi.org/10.48550/arXiv.2607.26159. This is a brand-new arXiv identifier, not a replacement of withdrawn v1 (2510.15236), per the 2026-07-23 decision. Comments field states it plainly: "supersedes arXiv:2510.15236, whose homeostatic property-cluster account and proposed centrality-prior and cluster-stability measures are withdrawn. The argument, apparatus, and empirical companion are new." Primary journal venue: *Minds and Machines* — journal submission itself has NOT happened yet, only the arXiv preprint.
 
-**Last updated:** 2026-07-28
+**Last updated:** 2026-08-08 (first full top-to-bottom read; manuscript revised, now **ahead of the posted arXiv version** and uncommitted)
+
+> **The working manuscript no longer matches arXiv:2607.26159.** A consistency pass and an
+> argument pass on 2026-08-08 repaired a §3.3 contradiction, a §4.1 dangling reference, and a
+> factual error in §6.2 (a wrong N carried over from Jung et al.), and added the §3.4 defence that
+> wires §3 to §5. Build is clean at 36 pp. Nothing committed and no v2 posted. See `DECISIONS.md`
+> 2026-08-08 for the full list and the three open calls.
 
 **Title:** *When Benchmark Inferences Do Not Compose: Projectibility in AI Evaluation*
 
@@ -168,3 +174,36 @@ An aggregate can describe its construction sample without supporting a broader i
 - Review the requested library scan of *Validity* when it arrives and incorporate it only if it changes the argument or source support.
 - Tag and archive the empirical companion, with a locked environment and a release DOI, when the submission commit is fixed.
 - Post the paper as a new arXiv submission and update public status surfaces when the new identifier exists.
+- **Pending reply:** response pitch sent 2026-08-06 to *Pax Machina* (editors@paxmachinamag.com), offering ~1,500 words answering Nick Caputo's "AGI's Bureaucratic Future". If they accept, draft within two weeks of their go-ahead. No reply by **2026-08-20**, drop it. Draft and rationale: `correspondence/2026-08-06-pax-machina-response-pitch.md`; decision entry 2026-08-06.
+
+### 2026-07-30 Session Notes (two source hooks, no manuscript change)
+
+- **Stefanski (2026), St Andrews Economics DP 2602**, routed as a composition specimen from outside
+  AI evaluation and on a peer-review track. Two Gemini models score 23,064 historical books on six
+  Hofstede dimensions; the series feeds a calibrated growth model yielding "38.7 percent of 1920
+  productivity growth". Every external check is ordinal (§3.2: the scale "does not claim intensity...
+  so the external exercises in Section 4 test rankings"); the load-carrying use is cardinal. §4 opens
+  by conceding no single check reaches the whole path or its cardinal scale, then says the checks
+  jointly "brace" the measure, which is the composition move this paper denies, stated by an author
+  who has enumerated his own levels. Hook: `notes/source-hooks/stefanski-2026-cultural-capital.md`.
+- **Two §5 items from his appendices, both measured rather than argued.** Table 14 Panel B: every
+  component of Total Friction validates individually (INDIV 0.095, LTO 0.209, UA 0.107, MAS 0.056,
+  INDUL 0.037) while the composite scores −0.021 with 51.3 percent predicted sign and permutation
+  p = 0.900. His own words: "The margins Total Friction adds validate individually, so its failure is
+  a property of the broader composite rather than of any single component." And Table 18 Panel B
+  prints the same wedge formula twice, at 0.111 / 80 percent on 5 tests and −0.003 / 48.7 percent on
+  39, with Panel A confirming both rows are the same construction.
+- **An endpoint mismatch the author states himself** (Appendix B.5.1): power distance fails the
+  cross-section because "among roughly twenty broadly similar Western countries in 1920 there is
+  little PD variance left to detect, while the movement the paper actually uses... is within-Western
+  and much larger." A restriction-of-range defence, and also a concession that the validating
+  comparison and the composed use differ in the realized range of the measured quantity. Possibly an
+  argument for naming range alongside object, population, conditions, outcome, and period in §3.2.
+- **Jung et al. (2026) is underused here.** It is already cited, accurately, in the
+  comparability-across-systems passage for "reliability didn't supply criterion validity" — step 1 of
+  three. Step 2 is the one for §3.3: convergent validity held on all three theory-predicted relations
+  (r_s = 0.47, 0.43, −0.37) while ecological validity failed and inverted. That is
+  convergence-is-not-composition with measurements attached, on 17 systems, peer-reviewed. Central
+  note now written at `literature/jung-etal-2026-psychometric-tests-llms.notes.md`.
+- **No manuscript edits.** arXiv:2607.26159 stands as posted; Minds and Machines submission still not
+  made.

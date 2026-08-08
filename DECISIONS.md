@@ -303,3 +303,216 @@ Format: `## YYYY-MM-DD` then bullet points with **bold topic** and brief rationa
 ## 2026-07-28 (cross-domain covariance concession)
 
 - **Accumulated coverage is no longer treated as bare set union throughout.** §6.3 now distinguishes merely counting passed domains from evidence that relates them. Ilić and Gignac's 591-model, 12-test positive manifold is acknowledged as making one tested domain informative about others in the sampled model--task matrix; the limit remains that this doesn't establish arbitrary tasks, domain interactions, later systems, or novel tool environments. Their published paper was downloaded to `literature/ilic-gignac-2024-interrelated-cognitive-capabilities-llms.pdf` and checked against the claim. A longer inserted paragraph was rejected after rendering because it duplicated §6.2 and pushed half the conclusion onto a new page; the evidence and qualification were consolidated into the existing §6.3 paragraph instead. The conclusion-page allowance increased from four to five baselines, keeping the conclusion on one page; build clean at 35 pp.
+
+## 2026-07-28 (arXiv posted, second entry)
+
+- **New arXiv preprint posted: arXiv:2607.26159 [cs.AI]** (cross-listed cs.CY, cs.LG), submission `submit/7880182`, announced 18:07:04 UTC. Title "When benchmark inferences do not compose: Projectibility in AI evaluation," 35 pp, 2 figures, 5 tables. Confirms the 2026-07-23 decision: posted as a brand-new identifier, not a v2/replacement of withdrawn `arXiv:2510.15236`. The comments field states the supersession and withdrawal plainly for any reader landing on the old ID. DOI: `10.48550/arXiv.2607.26159`. Journal submission to *Minds and Machines* has not happened yet — this is the preprint step only. Public repo: `https://github.com/BrettRey/benchmark-inference-composition`.
+
+## 2026-07-28 (interactive explainer artifact)
+
+- **Built and published an interactive web explainer of the paper's model** at Brett's request ("help people with various levels of background grok my model"). Guided-interactive-essay structure (approved via structured question): eight sections following the paper's argument, with a clickable typed-node chain explorer, a two-failure-modes tab with stepped reveal, a three-worlds aggregation demo (report-resolution toggle), and the worked legal audit as a status-chip verdict table. Scope covers the core argument plus the aggregation demo; the ten-part declaration and statistical module were left to the paper. All statistics, quotes, and examples were transcribed from `when-benchmark-inferences-do-not-compose.tex` (source-grounding pass verified every number). Codex drafted the HTML from a detailed spec (Brett's token-saving instruction); Claude wrote the spec, audited, fixed accessibility/palette/reveal-logic issues, and verified rendering in both themes via headless Chrome. Published as a private Claude artifact (URL in STATUS/session log: https://claude.ai/code/artifact/68220176-d19c-4b69-b1bc-363d7cd431ae); source copy kept at `notes/interactive-explainer.html`, uncommitted pending Brett's review.
+
+## 2026-08-06 (Pax Machina response pitch sent)
+
+- **Pitched a ~1,500-word response to Nick Caputo's "AGI's Bureaucratic Future"** to the editors of *Pax Machina* (editors@paxmachinamag.com). The publication launched 2026-08-04 out of the Meaning Alignment Institute (Ryan Lowe, Joe Edelman, Oliver Klingefjord) with editors from GovAI, DeepMind policy and Harvard; Seth Lazar wrote the editor's note on the Caputo piece. Two articles live at time of pitch. The argument offered: Caputo's documented-and-continuously-audited bureaucracy runs its oversight claim through evidence that covers only the sampled decisions, and the design consequence is a developer/deployer division of evidential labour that constrains what an audit body can compel and from whom. Draft, verified quotations, and rationale in `correspondence/2026-08-06-pax-machina-response-pitch.md`.
+- **Why this is a decision and not just correspondence.** It commits a public position on this paper's argument outside the journal track, to an AI-governance readership, before *Minds and Machines* has seen the manuscript. It does not consume the M&M submission and does not interact with the three-paper M&M sequencing constraint (`PORTFOLIO.md:302`), since *Pax Machina* is not a journal and publishes commissioned responses rather than primary research.
+- **Register decision.** First draft was pitched in journal-abstract register (warrant, composition, the five endpoint-alignment fields). Rewritten to lead with the legal-research failure case and drop the validity apparatus, on Brett's judgment that the editors will assess the idea rather than the credential. Affiliation line and linguistics background both cut for the same reason.
+- **Drop date 2026-08-20.** No reply by then, let it go rather than following up. Risk accepted: the venue is two days old and funded at $15k of a $65k ask, so it may not survive the year.
+
+2026-08-06 — Source routed in: Dawid (2022), *SHPS* 93:66–71 (`literature/dawid_2022_meta_empirical_confirmation_three_criticisms.notes.md`; hook at `notes/source-hooks/dawid-2022-meta-empirical-confirmation.md`). Two transferable tools for the benchmark-composition argument, both from outside AI, which makes them harder to dismiss. First, a deflation test: a no-alternatives claim "needs to be based on a specified class of physical phenomena" no alternative can represent; one built on a methodological choice faces a regress and "deflates to a mere statement of methodological preference." Applied here, "no better benchmark exists for X" is an argument only if it names behaviours no alternative instrument could measure, not a preference about how evaluation should be conducted. Second, his local/global distinction — "UEA ... is a local argument ... deployed to support a theory's viability within a given empirical horizon" — is the composition problem in another vocabulary, and an objection fatal to the global claim leaves the local one standing. Caution recorded in the hook: Dawid's conclusion is that meta-level evidence *can* confirm, and he holds that individually weak arguments compose under stated conditions, so he is an ally for the machinery and not for the verdict. No manuscript edit; the preprint is public as arXiv 2607.26159 and the M&M submission is not yet made.
+
+## 2026-08-08 (full read of the posted version; §3.3 drift repaired)
+
+- **First recorded top-to-bottom read of the manuscript.** Every prior pass in this log is
+  sectional (pairwise audit, two external reviews, a five-reviewer board, terminology sweeps).
+  Hypothesis going in: §3.3 was drafted in the 2026-07-24 reconstruction and never revisited,
+  so it would have drifted from the 07-27 five-field split and the 07-28 two-stage
+  reorganization. Confirmed on both counts.
+- **§3.3 contradicted §3.2 and §3.4 and has been repaired.** It read "those links may be
+  composed if their systems, cases, outcomes, and conditions align": alignment stated as
+  sufficient, four fields instead of five, informal names, period dropped. §3.4's second
+  counterexample refutes exactly that eighteen lines later ("every field of the shared endpoint
+  matches ... The composed prediction can still be wrong"), and `CLAUDE.md` point 4 carries the
+  standing instruction not to phrase the requirements as sufficient. Now: "Those links compose
+  only if their object, population, conditions, outcome, and period align at the shared
+  endpoint, and only if warrant then transmits across it." A grep of all twelve field
+  enumerations confirms §3.3 was the only non-conforming site.
+- **§4.1 dangling anaphor fixed.** The paragraph opened "Those measured rates don't estimate
+  the defect rate of this application" with no antecedent in §4.1; the nearest referent was
+  Magesh's figures in §1 and §3.4. The 2026-07-24 rewrite that removed the duplicate Magesh
+  sentence took the antecedent with it. Now names the source via `\textcite` without repeating
+  the numbers.
+- **Declaration item 9 synced** from "condition ... and time" to "conditions ... and period",
+  matching the field names §3.1 establishes.
+- **Deferred, needs Brett's call: Appendix B has no standalone period question.** Q4 folds it
+  into "prompts, tools, databases, reviewers, sites, and periods". The 07-27 entry claimed the
+  restructure "reconciles §3.2 with Appendix B"; on period it didn't. Fixing it means either
+  splitting Q4 (renumbering Q5--Q10) or leaving the appendix deliberately coarser than §3.2.
+- **All of the above was live on arXiv:2607.26159.** The working `.tex` differed from
+  `submission/arxiv-source-2026-07-28/` by the preamble include path only. Build after the
+  repairs: 35 pp, 0 errors, 0 undefined, 0 em-dashes. Not committed; no v2 posted.
+
+## 2026-08-08 (argument pass; §3.4 defence built, attacked, and rebuilt)
+
+- **The §3--§5 gap closed.** §3.4's second counterexample (endpoints match in every field, warrant
+  still fails) invites the objection that \mention{draft defect} is just a coarsening, so a finer
+  outcome type would expose a mismatch and the two-failure structure collapses to one. §5's
+  information-resolution argument was the answer and the two sections had no cross-reference
+  between them beyond the §1 roadmap. §3.4 now answers the objection and points at §5.
+- **The first version of that answer was wrong and an adversarial reader killed it.** It argued
+  that "every declaration fixes a finite resolution and no finite resolution forecloses every
+  modifier within a field." That makes which failure obtains depend on how finely the evaluator
+  declared a field, so two evaluators facing the same world disagree about whether a composition
+  is *defined*. §3.2 and the Conclusion both state definedness categorically, so the concession
+  bought the two-failure structure at the cost of the modal vocabulary that made the first failure
+  worth naming. It also gave a fact about declarations where a norm was needed.
+- **Replaced with the type argument the paper already had at §3.2.** Alignment is a relation among
+  the fields of Equation~2; transmission is a relation among the assumptions and evidence the
+  edges carry. Refining a field doesn't show the original composition was undefined; it builds a
+  different pair of nodes and a different proposed composition. Categorical, and immune to the
+  refinement regress.
+- **Second leg: the case can't be relocated into a field at all.** What defeats the substitution
+  is conditioning on \(B\), and Equation~2 has no field for conditioning structure. Had the target
+  been the marginal probability of a final defect over pooled requests, the review study's
+  estimate would have sufficed with no independence assumption; it's the *conditional* target that
+  needs \(P_T(Z\mid D,B)\). Table~1's estimand row was annexing conditioning structure to
+  alignment and contradicted this, so its composition question was reworded.
+- **Third leg: the two failures are found and repaired differently.** Spurious adjacency is found
+  by comparing declarations, needs no domain theory, and is repaired by new observations.
+  Transmission failure needs substantive knowledge of what modifies the effect, and where
+  resolution was retained it's repaired by reanalysis of data already collected. That is the
+  answer to the "this is bookkeeping" charge and the paper had never stated it.
+- **Triviality objection now named and answered** at §3.2. First draft over-credited Equation~3,
+  which is an identity and so can't establish that anything fails. Now Table~1 answers the
+  "everyone knows warrant doesn't transfer" reading and Equation~3 is described as *displaying*
+  the required quantity, with the forward reference to §3.4 doing the work.
+- **§3.3 gets its specimen.** \textcite{jung2026psychometric}: convergent validity held on all
+  three theory-predicted relations (\(r_s=.47\), \(.43\), \(-.37\)) while the same scores failed
+  downstream. All three verified against the source text and Figure 12 before drafting.
+- **A factual error in the posted version, found by the citation audit and fixed.** §6.2 attached
+  "across 17 language models" to both the reliability finding and the downstream-behaviour
+  finding. The downstream analysis used 16: Jung et al.'s footnote 5 excludes Centaur for not
+  following downstream task instructions. §6.2 also called the result *criterion validity* where
+  the source says *ecological validity*. Rather than patch the count, §6.2 was recast onto the
+  point that makes it a comparability case: their downstream analysis is a between-model rank
+  correlation, so ordering systems by test score inverts against ordering them by behaviour. That
+  removes the wrong N, the relabelling, and the redundancy the new §3.3 paragraph had created.
+- **Counterexample 2's object gap closed.** "reviewers ... catch 90\% of draft defects on those
+  same requests" never said whose drafts. If one system's, the object fields don't align and the
+  example is a spurious-adjacency case, which would be self-refuting. Now "across drafts produced
+  by all of those systems".
+- **`\enlargethispage{5\baselineskip}` removed.** Verified inert: identical output with and
+  without it, because the page boundary it was anchored to no longer exists. This retires the
+  standing caveat in this log and in `CLAUDE.md` about re-checking p.~28 after any §8--§9 edit.
+- **Appendix B gained a standalone period question**, finishing the reconciliation the 07-27 entry
+  claimed. Safe: the appendix questions are never cited by number anywhere in the paper.
+- **Still open, Brett's call.** (1) The two-page cut, now more pressing at 36 pp / 13,980 words.
+  §5.2 is the candidate: it carries the densest number-run and the section concedes those results
+  don't show any benchmark quantity predicts another target. (2) A resolution question for
+  Appendix B, recommended by the adversarial reader. (3) Whether the Conclusion should mark
+  transmission as established defeasibly against a declared defeater list.
+- **Build:** 36 pp, 0 errors, 0 undefined, 0 em-dashes, qpdf clean. Not committed; no arXiv v2.
+
+## 2026-08-08 (redundancy pass; codex + citation audit actioned)
+
+- **Two hostile readers independently hit the same seam in the new §3.3 Jung paragraph**: the paper
+  stipulates \term{convergence} as distinct evidence bearing on one claim, while Jung et al.'s
+  *convergent validity* is predicted correlations among constructs. Rewritten to drop the label,
+  drop \mention{predict} (which conflicted with §7.3's own standard requiring out-of-sample
+  performance for a predictive claim), and hand the downstream result to §6.2 instead of restating
+  it. Codex wanted it deleted; kept in de-equivocated form.
+- **Technical error in the posted version corrected.** §3.2 said substitution is warranted
+  \enquote{only if} \(Z\perp B\mid D\). Conditional independence is sufficient, not necessary: the
+  weighted differences can cancel. Now stated as sufficient, with the cancellation case named as
+  something an evaluator isn't usually positioned to claim.
+- **Appendix B's new period question corrected.** The first draft listed model build and index date
+  as period information; the paper assigns both to \term{object} (§3.1, §3.2), so it double-counted
+  and let one discontinuity be classified twice. It also treated a retest trigger as evidence
+  rather than as a condition on future authorization. Both repaired.
+- **Table 5 repaired.** The \enquote{minimum projectibility-declaration record} was missing
+  \term{conditions} and \term{period}, two of the five fields declaration item 2 requires twelve
+  lines above, with conditions absorbed into Object. It also had no place for the transmission half
+  of the two-stage audit. Added Conditions, Period, and Transmission rows, ordered to match
+  Equation~2, with values drawn from §4's existing design rather than invented.
+- **Neighbours-section duplication cut, ~150 words.** §1's second neighbours paragraph
+  characterized four works that §2.3 then characterizes in full 40 lines later, and closed by
+  restating the paragraph immediately above it. Reduced to one sentence plus the forward reference
+  to §2.3 that §1's roadmap never carried. §1's earlier three-clause preview of the same three
+  works folded into its opening sentence. The \term{nomological network} gloss moved to its new
+  first mention at §2.3 so the logged 07-24 definition decision survives.
+- **The §2.3 taper deleted.** Its closing paragraph restated §1 and previewed §3, which the roadmap
+  already does. The 07-24 entry recorded promoting the Kane defence \enquote{so the section closes
+  on the claim rather than tapering}; that paragraph was the taper, later split into its own. The
+  section now ends on \enquote{it doesn't treat composition as a distinct object of validation}.
+- **Float-specifier lever tested and rejected.** Changing tables from `[tbp]` to `[htbp]` was
+  predicted to reclaim about a page of float whitespace. Measured: no change, 37 pp either way.
+  Reverted rather than churn placement for nothing.
+- **Measured page counts** (same `.bbl`, full rebuild each time): 36 pp as it stands; **34 pp with
+  Appendix A deleted**. Partial trims of Appendix A return only one page, because a surviving
+  heading still opens a page and pushes Appendix B across a break.
+- **Session arc:** 35 pp / 13,510 words as posted, 37 pp / 14,006 after the repairs and additions,
+  36 pp / 13,857 after the redundancy cuts. Build clean throughout: 0 undefined, 0 em-dashes.
+
+## 2026-08-08 (whole-paper redundancy sweep actioned)
+
+- **Eight clean-win cuts applied, ~355 words, one page.** Each was a claim stated elsewhere in a
+  stronger form, and the stronger instance was kept:
+  - §6.1's four-negation paragraph (\enquote{This tripartite distinction prevents one objection...})
+    is the same paragraph as §6.4's, in weaker vocabulary. Kept §6.4, which names test--retest,
+    factor loading, predictive relation, and policy.
+  - §6.2's \enquote{Process evidence can support...} glosses the Embretson quotation directly above
+    it, which already says it's \enquote{possible to obtain strong support for one, but not for the
+    other}.
+  - §4.4's closing summary paragraph: every clause appears in the abstract, the §1 roadmap, §4.4's
+    own opener, Table 4, §3.3, or the Conclusion. §4.4 now ends on Table 4 and the replacement
+    paragraph.
+  - §6.3's second use of Ilić and Gignac repeated the design, the sample, and the conclusion of
+    §6.2's, and its one new fact (the mathematics loading) was never picked up. Compressed to a
+    back-reference.
+  - §4.1's omission-vs-fabrication sentences: made at §3.4 twice already and again in the defect
+    definition at §4.3.
+  - §6.4's four \enquote{should} sentences are declaration items 1, 2, 3, and 10 arriving ninety
+    lines early.
+  - §7.4's update-reopening closer is the whole of the paragraph that follows it.
+  - §2.1's warrant-source triad is §2.2's four sources, ten lines earlier.
+- **Verified after cutting:** \enquote{illustrates the gap} still sits against the Embretson
+  paragraph; \enquote{the positive manifold reported above} resolves to §6.2; no orphaned blank
+  lines. Build clean.
+- **Net effect: the paper is now the length it was when posted while carrying more argument.**
+  35 pp / 13,502 words, against 35 pp / 13,510 as posted, and it has since gained the §3.4
+  resolution defence, the triviality reply, the §3.3 specimen, the Appendix B period question, and
+  three repaired Table 5 rows. Abstract 203 words, inside the M\&M 150--250 band. 0 undefined,
+  0 em-dashes, no banned self-reference, qpdf clean.
+- **Deliberately not taken, all judgment calls rather than defects.** (1) Appendix A deletion, which
+  measures at 35 pp -> 33 pp from here. (2) Appendix B items 1--8, which restate §3.2 as questions;
+  the sweep called this a judgment call because a practitioner checklist may be exactly what the
+  venue values, and items 9--11 are new either way. (3) §5.1's three-state itemize, whose numbers
+  Figure 3's panels already print. (4) Folding §6.4 into §6.1, which is a reorganization.
+- **Recorded for a later pass:** the shared-label point appears in fifteen places and the
+  capability-attribution point in nine. No single instance is objectionable and four of the nine
+  are load-bearing (figure caption, declaration item, appendix item, conclusion). The finding is
+  the count, and the cheap fix is deleting closers rather than setups.
+
+## 2026-08-08 (Appendix A cut; Brett's call)
+
+- **Appendix A, the statistical module, deleted.** 44 lines. Its formulas were §5.1's with a domain
+  subscript \(g\) added, and nothing in the paper can fill that index: `analysis/reanalyse_zhang.py`
+  records among its limitations that the released benchmarks don't instantiate the ten CHC-style
+  domains, and every §5.2 figure is per model--benchmark cell. The index was residue from the
+  withdrawn v1. Its genuinely unique content is estimator specification, which `metrics_spec_v3.md`
+  already owns as the canonical spec and which is public in the companion repo §5.2 cites.
+- **Two glosses added where the appendix had been carrying a definition.** §5.2 now says the
+  cross-fitted tail is \enquote{computed by reversing the halves and combining}, sitting directly
+  after the response-half procedure it inverts; §7.4 glosses \term{null-referenced} as subtracting
+  the value a statistic takes under a simulated no-difference condition.
+- **Three entries dropped out of the printed bibliography**, verified against the built PDF:
+  `acerbiTasche2002expectedShortfall`, `rockafellarUryasev2002cvar`, `gelman2014types`.
+  `GelmanLoken2013` survives, still cited in §4.3 for the limits of preregistration, so the two
+  remaining Gelman hits in the PDF are that entry and not the retired one.
+- **Correction to the case made for the cut.** Appendix A was described as an orphan with no
+  `\ref` pointing at it. True, and also true of the surviving appendix, which is likewise
+  self-announced. The orphan argument was weaker than stated; the decision rests on the dead domain
+  index, the duplication of the canonical spec, and the venue.
+- **Final state: 33 pp, 12,894 words.** Against 35 pp / 13,510 as posted. 0 undefined, 0 em-dashes,
+  no banned self-reference, qpdf clean, abstract 203 words. Conclusion on p.~29, appendix opens
+  p.~30, no widow. Not committed; no arXiv v2 posted.

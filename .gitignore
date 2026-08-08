@@ -16,3 +16,21 @@
 
 # macOS
 .DS_Store
+
+# --- Not for the public repo (added 2026-08-08) ---
+# Third-party contact details and unsent draft correspondence. Contains ten
+# named academics' email addresses; publishing is irreversible because history
+# persists after deletion.
+submission/cited-author-outreach-emails-*.md
+# Drafted correspondence plus its internal "notes for Brett" deliberation.
+correspondence/
+# Critique of a named academic's unpublished working paper, quoted at length.
+notes/source-hooks/stefanski-2026-cultural-capital.md
+
+# --- Derived submission artifacts (duplicate what is already public on arXiv) ---
+submission/arxiv-source-*/
+submission/*-arxiv-source.zip
+submission/arxiv-submission-copy-*.md
+
+# --- Pending review ---
+notes/interactive-explainer.html
