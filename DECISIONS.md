@@ -516,3 +516,177 @@ Format: `## YYYY-MM-DD` then bullet points with **bold topic** and brief rationa
 - **Final state: 33 pp, 12,894 words.** Against 35 pp / 13,510 as posted. 0 undefined, 0 em-dashes,
   no banned self-reference, qpdf clean, abstract 203 words. Conclusion on p.~29, appendix opens
   p.~30, no widow. Not committed; no arXiv v2 posted.
+
+## 2026-08-08 (cross-paper: `profile` collision, defeater-generator offered)
+
+- **Terminology question raised by the truth-tracking-profiles session, verified both ways.** Canon
+  (`papers/drafting/projectibility-history-and-prospects/main.tex`) reserves \term{profile} for the
+  worldly relation: \enquote{profile} is the worldly relation between the observed source and
+  target}, and the bearer sentence distinguishes warrant from \enquote{the worldly source--target
+  profile and any proposed causal ground}. This paper uses \mention{profile} eleven times in the
+  AI-evaluation sense of a score vector.
+- **Position taken: don't rename this paper; the question goes to Brett at programme level.** All
+  eleven uses are qualified collocations (benchmark profile ×6, or profile ×2, system profile, its
+  profile, domain profile), none is `\term{}`-marked, and the canonical sense appears nowhere here
+  (zero hits for \mention{source--target profile} or \mention{worldly relation}), so there's no
+  internal ambiguity. \mention{Benchmark profile} is standard in the target literature, and the
+  vocabulary is already public as arXiv:2607.26159. The cheaper programme-level fix is for canon to
+  reserve the qualified form and leave bare \mention{profile} free. **Unresolved; Brett's call, and
+  a candidate for the canon register either way.**
+- **Defeater-generator accepted in principle, deferred in practice.** Their proposal: the defeaters
+  for a projection are the perturbations that remove a stabilizer the source success actually
+  depended on. That addresses the hole §8 concedes, where the defeater list is grounded in sources
+  (domain theory, prior failures, causal knowledge, institutional experience, stakeholders) rather
+  than derived. Their own limit is that it generates route-removal defeaters only, not
+  lineage-dependence or multiplicity, which maps onto the §3.2 transmission requirements that
+  endpoint alignment can't reach. **Not imported yet:** a paper arguing for evidential discipline
+  can't introduce a borrowed generative principle with nothing to cite. Sequence is their paper
+  first, then a sentence at §7.2 step 4 and §8. Consequence to price in: this paper would then cite
+  theirs on a point it currently concedes as a gap, and to a preprint if Synthese is slower than
+  M\&M.
+- **Routes-force-evidential-labour handed to them.** World-side, no room here. Cautioned that §7.1's
+  division is partly institutional (privilege, proprietary lineage, contract) rather than about
+  stabilizing routes, so the routes story explains part of that division and not all of it.
+
+- **Correction to the entry above, same day.** The defeater-generator is *not* in the
+  truth-tracking draft. It's that session's synthesis of one worked passage (a retrieval-augmented
+  clinical-guidelines case), never stated as a principle, and the public preprint (PhilArchive
+  REYTPW) predates it. So the deferral isn't \enquote{wait for their paper} but a three-step chain,
+  each step Brett's to authorise: (1) they write the generator into the draft as an explicit
+  principle, (2) the preprint is refreshed so a stable citable version exists, (3) §7.2 step 4 and
+  §8 point at it. Until (1) and (2), a pointer from this paper would send a reader to something
+  they can't find. Their timing argument is worth acting on independently: refresh the preprint
+  early rather than at submission, since M\&M is likely faster than Synthese.
+- **`profile` question narrowed and closed on this side.** They verified both of this paper's
+  claims (zero `\term{}`-marked \mention{profile}, zero uses of canon's sense) and withdrew the
+  suggestion that this paper rename. Both sessions now agree the qualifier belongs in canon rather
+  than in either manuscript. Their own draft turns out to be the one out of step: canon
+  `\term{}`-marks \mention{profile} at lines 159 and 735, and their draft uses that exact sense 102
+  times while marking it zero. **Still Brett's call as a canon-register item; no manuscript change
+  here.**
+
+## 2026-08-08 (correction: the 2026-07-23 propagation note was stale and cost a peer a wasted move)
+
+- **The 2026-07-23 (evening) entry is now false and is corrected here rather than edited.** It said
+  the \mention{source--target link} -> \mention{projection} rename was "NOT propagated to the global
+  `check-projectibility` skill or sibling projectibility papers, which use 'link / edge-level'
+  program-wide." Verified today against
+  `~/.claude/skills/check-projectibility/SKILL.md`: **projection appears 23 times; `link`,
+  `link-level`, `edge-level`, and `source--target link` appear zero times.** The
+  truth-tracking-profiles session read my entry, acted on it, and had to walk the change back, which
+  is the concrete cost of leaving a rotted claim in a log other sessions read.
+- **Consequence worth raising with Brett: the rename appears to have propagated by practice without
+  a decision.** The skill uses \mention{projection}, this paper uses it, and the truth-tracking
+  session reports its own apparent `link` hits are ordinary English. The 07-23 entry recorded the
+  rename as "a program-level decision" that was never taken. It should either be taken and put in
+  the canon register, or the drift should be recognised as the decision. Right now it's neither.
+- **Preprint timing: Brett ruled refresh-when-ready, not early.** So there is no early citable
+  version of the defeater-generator, and if M\&M moves faster than Synthese this paper ships with
+  the §8 gap as written. **No manuscript change, and none wanted:** §8 already concedes the gap and
+  names its sources, which is an honest thing for a limitations section to contain. A later pointer
+  is an improvement to make if timing allows, not a slot to hold open.
+
+## 2026-08-08 (external review triaged; contribution reframed against Kane)
+
+- **The reviewer was given the wrong source file, and the reviewer caught it.** Verified: the `.tex`
+  supplied was commit `4cd65f9` (2026-07-24), which carries \enquote{degree of warrant} ×4,
+  \enquote{Six interface conditions} ×2, the pre-rename repository name, and no two-counterexamples
+  heading, exactly as described. The PDF supplied was today's. **Process failure on our side, not a
+  reviewer defect**, and flagging it rather than reviewing the mismatch silently is evidence the
+  review is careful. Its PDF-based findings are treated as reliable on that basis.
+- **Two load-bearing claims verified before adopting anything.**
+  (1) Kane 2013 p.~1, his own words: validation is \enquote{an evaluation of the coherence and
+  completeness of this interpretation/use argument and of the plausibility of its inferences and
+  assumptions}. An argument specified to that standard *can* represent interface assumptions, so
+  \enquote{Kane doesn't treat composition as a distinct object of validation} was novelty by
+  nomenclature.
+  (2) The \enquote{both directional components exceed twice the absolute signed change in 22 of 32}
+  statistic reproduces exactly, **and 21 of those 22 cells have \(|L|<.01\)** (median .0033, minimum
+  .0001). The threshold cleared is near zero almost everywhere, so the statistic was close to
+  vacuous. Cut.
+- **Contribution reframed, the review's first and most important item.** The concession to Kane is
+  now complete and the contribution relocated to the specialization: a representation in which
+  separately produced claims can be checked field by field for whether they form a well-typed path,
+  and a division between links that never meet and links that meet while warrant fails to cross.
+  Abstract novelty sentence replaced; Table~1's audit row now reads \enquote{Made the object of
+  analysis rather than left to the analyst}.
+- **Alignment/transmission made representation-relative. Brett ruled for this reviewer over the
+  earlier hostile referee**, who had pushed the opposite way this morning. The categorical claim
+  (\enquote{this case can't be relocated into a field at all}) was circular: Equation~2 has no
+  conditioning field because that's how it was stipulated. Now the distinction is relative to the
+  declared schema, refinement is framed as a repair that moves a failure from the second stage to
+  the first, and Limitations gains a representation-dependence paragraph.
+- **Four overclaims softened**, all cases of a modelling choice stated as a fact: \enquote{isn't a
+  scalar property} -> graded support with no single scalar; \enquote{isn't an empirical node} ->
+  \enquote{isn't represented as a sample-bearing node}; \enquote{undefined} -> \enquote{ill-typed as
+  stated} at five sites including Figure~1's caption and panel B; \enquote{verify} ->
+  \enquote{demonstrate, in this released design}.
+- **Equation~3 given a unit structure** (a system--request pair drawn from \(T\); \(B\) varies across
+  systems, \(D\) and \(Z\) across pairs) to forestall an ecological-level objection.
+- **Four §4 repairs.** The confirmatory criterion is now the *empirical performance premise* of
+  mandatory-review use rather than the authorization; the red-line rule is marked a decision
+  constraint, with the point that zero observed unresolvable citations in 200 memos doesn't
+  establish a zero rate; the family of four candidate authorizations is registered against
+  multiplicity; and the two-lawyer reference standard now records initial disagreement and marks
+  unsettled cases disputed rather than forcing consensus.
+- **§1's LLMs-help-evaluators paragraph cut** as tangential and never developed.
+- **Deferred, structural rather than defects:** the §6 cut of 25--30\%, §7's consolidation to six
+  steps, and §5's methods box plus all-cell figure. The last may belong in the companion.
+- **Build:** 33 pp, 13,184 words, 0 undefined, 0 em-dashes, abstract 207 words inside the M\&M band.
+
+## 2026-08-08 (§5.2 drops its occurrence claim; severance upheld)
+
+- **Brett chose to drop the released-data reanalysis rather than add the all-cell figure.** §5.2
+  claimed \enquote{the logical possibilities occur in released model evaluations} and supported that
+  occurrence claim with three numbers from one model--benchmark cell. The choice was between
+  supporting it across all 32 comparisons, which meant a data figure and reversing the 2026-07-24
+  severance, and dropping the claim. The 07-24 severance stands.
+- **§5.2 is now \enquote{A known-truth demonstration}.** It keeps the stable-poor scenario (latent
+  worst-tail change zero against a worst-decile conditional expected loss of .80; response-half
+  .0013, cross-fitted .7911) and a new paragraph on selection, where the Type M citation now lives.
+  It states plainly that the section makes no claim about how often the states occur in the wild.
+  The architectural point survives, since it doesn't depend on frequency.
+- **What went with it:** the Zhang design description, the gpt-5.4/MMLU-Pro focal cell, the raw and
+  response-half worst-decile values, the item-bootstrap interval restored earlier today, and the
+  distributional summary added earlier today (\(|L|\) median .0068, two-sided movement median
+  .0678). `wangEtAl2024mmluPro` is now uncited and harmlessly unprinted; `zhang2026illusionRobustness`
+  survives in §5.1 for the \(\instab\) and \(\wtd\) definitions; `gelman2014types` survives in the
+  new selection paragraph.
+- **Three dangling references caught by sweep, not by the edit itself.** The abstract still promised
+  \enquote{a reanalysis and simulation}; §8 still said \enquote{the reanalysis and simulations
+  establish statistical distinctions under the released and simulated designs}; and §5's opening
+  still advertised \enquote{a compact empirical illustration}. All three would have shipped. §8 now
+  also states the negative directly: the simulations don't establish how often the states occur in
+  released evaluations.
+- **Consequence to note before submission:** the paper now contains no reanalysis of real model
+  outputs. Its empirical content is the constructed legal audit and the known-truth simulations,
+  both explicitly labelled as such. That is a cleaner evidential position and a thinner one, and the
+  companion repository is now the only place the released-data work appears.
+- **Build:** 33 pp, 13,067 words, abstract 206 words, 0 undefined, 0 em-dashes.
+
+## 2026-08-08 (§5 rebuilt: bounded real-data report restored, fake-data check made honest)
+
+- **The earlier binary was the wrong shape and produced a worse section.** The choice offered was
+  support the occurrence claim across all 32 comparisons with a figure, or drop to simulation only.
+  A third option existed: keep one bounded factual report and drop the occurrence framing. Dropping
+  \enquote{the logical possibilities occur in released model evaluations} was right, since that's a
+  claim about the field. Dropping the distributional observation with it was not, since that's a
+  claim about one dataset and is exactly what the paper's own scope discipline licenses.
+- **§5.1 now carries the observation, attached to the state it bears on.** After state B: across the
+  32 comparisons the absolute signed change has a median of .0068 while two-sided item movement has
+  a median of .0678, so the typical mean moves by under a percentage point where the typical item
+  set moves by nearly seven. Both medians recomputed from the pinned CSV at the time of writing.
+  Prose only, no figure, no `analysis/outputs` dependency, so the 07-24 severance stands.
+- **The dependence caveat came back with it.** The comparisons share items within benchmark and
+  lineage across models, so they're one crossed dataset and not 32 independent replications, and the
+  sentence says what that dataset does rather than what evaluations do in general.
+- **The known-truth check now states its own limit.** Previously it said the disagreement
+  \enquote{follows from the estimands}, which understated the problem: the scenario was *built* so
+  the two quantities differ, so the disagreement is true by construction. It now says so, and draws
+  the consequence: this checks that each estimator recovers its own target, and establishes nothing
+  about how often such cases arise. Owning that is the paper's own standard applied to its own
+  evidence.
+- **Why this matters beyond §5:** a referee who noticed that a methods paper demonstrated in
+  simulation what it could have shown in data it already had would have had a free shot. The section
+  now reports the data it has, at the scope it can defend, and says what the simulation can't do.
+- **Build:** 33 pp, 13,203 words, 0 undefined, 0 em-dashes.
