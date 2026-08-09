@@ -66,6 +66,8 @@ when it had never reached any committed file.
   the log. <!--asof:2026-08-09 verify:grep -q 'scales down' papers/retarget/agi-evaluation/when-benchmark-inferences-do-not-compose.tex-->
 - The manuscript still builds clean, with no undefined references and no em-dashes. <!--asof:2026-08-09 verify:test $(grep -c Undefined papers/retarget/agi-evaluation/when-benchmark-inferences-do-not-compose.log) -eq 0-->
 - The declaration's stated part-count matches its table. <!--asof:2026-08-09 verify:test "$(grep -oE 'declaration has [a-z]+ parts' papers/retarget/agi-evaluation/when-benchmark-inferences-do-not-compose.tex)" = 'declaration has thirteen parts' -a $(awk '/tab:declaration_fields/,/end.tabular./' papers/retarget/agi-evaluation/when-benchmark-inferences-do-not-compose.tex | grep -cE '&.*[\\]{2}$') -eq 14-->
+- The eleven cited-author outreach emails are still unsent, so all eleven remain eligible as M&M
+  suggested reviewers. <!--asof:2026-08-09 verify:grep -q 'STATUS 2026-08-09: NOT SENT' papers/retarget/agi-evaluation/submission/cited-author-outreach-emails-2026-07-29.md-->
 - The working manuscript has diverged from the posted arXiv v1 and a v2 is owed. <!--asof:2026-08-09 verify:! git -C papers/retarget/agi-evaluation diff --quiet HEAD~1 -- when-benchmark-inferences-do-not-compose.tex-->
 
 The October 2025 preprint, arXiv:2510.15236, was **withdrawn on 2026-07-23** (`submit/7861781`; arXiv confirmed the withdrawal public 2026-07-23; its homeostatic-cluster thesis retracted) and is the historical starting point only. The live paper is a target-indexed measurement framework, not an HPC-kind argument or a proposal for a universal robustness score, and has now been posted as a new arXiv submission rather than as a replacement of the withdrawn v1.

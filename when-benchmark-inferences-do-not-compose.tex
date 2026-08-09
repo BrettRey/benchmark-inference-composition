@@ -4,6 +4,12 @@
 \input{.house-style/preamble.tex}
 \usepackage{float}
 \usepackage{tikz}
+% Springer/Minds and Machines caption style: bold "Fig. N" and "Table N",
+% a space rather than a colon, and no terminal punctuation in the caption.
+% Loaded after float, which is the order the caption package documents.
+\usepackage{caption}
+\captionsetup[figure]{name=Fig., labelsep=space, labelfont=bf}
+\captionsetup[table]{labelsep=space, labelfont=bf}
 \usetikzlibrary{arrows.meta, positioning}
 \hypersetup{
   pdftitle={When Benchmark Inferences Do Not Compose: Projectibility in AI Evaluation},
@@ -136,7 +142,7 @@ AI evidence is commonly produced in separate studies by different actors and ass
 
 \begin{table}[!t]
 \centering\small
-\caption{Neighbouring frameworks and the composition question.}\label{tab:frameworks}
+\caption{Neighbouring frameworks and the composition question}\label{tab:frameworks}
 \begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.20\linewidth}
                     >{\raggedright\arraybackslash}p{0.25\linewidth}
                     >{\raggedright\arraybackslash}p{0.27\linewidth}
@@ -181,7 +187,7 @@ Projections in the broad sense of Section~\ref{ssec:definition} include interpre
 
 Generalizing from observed benchmark items to further items under the same generating rule is one empirical edge. Extrapolating to a new task population, transporting a relation to a new model build, and predicting a post-review outcome are further edges. Interpretive inferences remain part of the broader validity argument, but they aren't themselves sample-bearing interfaces between empirical studies. The notation forces no commitment that every argument has the same sequence. It prevents an argument from treating a sequence as one undifferentiated leap.
 
-Figure~\ref{fig:chain} names the nodes and edges and matches each projection to evidence that bears on it. No amount of evidence under one arrow automatically fills another.
+Fig.~\ref{fig:chain} names the nodes and edges and matches each projection to evidence that bears on it. No amount of evidence under one arrow automatically fills another.
 
 \begin{figure}[!t]
 \centering
@@ -253,7 +259,7 @@ Figure~\ref{fig:chain} names the nodes and edges and matches each projection to 
 \draw[fl] (q2) -- node[t, right] {no} (f2);
 \end{tikzpicture}%
 }
-\caption{A claimed benchmark-to-use chain and its interface audit. Panel A names the empirical nodes and projective edges. Each intermediate box carries two records drawn as one, the upstream target and the downstream source, written \(\mathcal{N}_i/\mathcal{N}'_i\); whether they are one is what panel B asks, and the question arises at every join. A capability attribution, supported where appropriate by content, process, causal, and nomological evidence, may serve as an interpretive premise for \(e_2\) but isn't an empirical endpoint. Panel B audits endpoint alignment before warrant transmission and shows the three possible outcomes. \(\mathcal{N}_0\) and \(\mathcal{N}_1\) describe the same object over different populations.}\label{fig:chain}
+\caption{A claimed benchmark-to-use chain and its interface audit. Panel A names the empirical nodes and projective edges. Each intermediate box carries two records drawn as one, the upstream target and the downstream source, written \(\mathcal{N}_i/\mathcal{N}'_i\); whether they are one is what panel B asks, and the question arises at every join. A capability attribution, supported where appropriate by content, process, causal, and nomological evidence, may serve as an interpretive premise for \(e_2\) but isn't an empirical endpoint. Panel B audits endpoint alignment before warrant transmission and shows the three possible outcomes. \(\mathcal{N}_0\) and \(\mathcal{N}_1\) describe the same object over different populations}\label{fig:chain}
 \end{figure}
 
 \subsection{Endpoint alignment and warrant transmission}\label{ssec:interfaces}
@@ -349,7 +355,7 @@ Table~\ref{tab:legal_chain} states the proposed links before any local result is
 
 \begin{table}[!t]
 \centering\small
-\caption{The legal-assistant argument decomposed into projection links.}\label{tab:legal_chain}
+\caption{The legal-assistant argument decomposed into projection links}\label{tab:legal_chain}
 \begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.05\linewidth}
                     >{\raggedright\arraybackslash}p{0.23\linewidth}
                     >{\raggedright\arraybackslash}p{0.25\linewidth}
@@ -403,7 +409,7 @@ Table~\ref{tab:hypothetical_results} gives constructed results. They aren't obse
 \begin{table}[!t]
 \centering\small
 \setlength{\tabcolsep}{3pt}
-\caption{Constructed confirmatory results for the worked example. Exact bounds are one-sided 95\% bounds for the post-review defect probability.}\label{tab:hypothetical_results}
+\caption{Constructed confirmatory results for the worked example. Exact bounds are one-sided 95\% bounds for the post-review defect probability}\label{tab:hypothetical_results}
 \begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.23\linewidth}
                     >{\centering\arraybackslash}p{0.13\linewidth}
                     >{\centering\arraybackslash}p{0.14\linewidth}
@@ -434,7 +440,7 @@ Table~\ref{tab:audit_status} returns these results to the complete chain. The cr
 
 \begin{table}[tbp]
 \centering\small
-\caption{Warrant status after the constructed local study.}\label{tab:audit_status}
+\caption{Warrant status after the constructed local study}\label{tab:audit_status}
 \begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.30\linewidth}
                     >{\raggedright\arraybackslash}p{0.19\linewidth}
                     >{\raggedright\arraybackslash}p{0.42\linewidth}@{}}
@@ -458,7 +464,7 @@ Even the supported termination-clause result is only one premise in a decision. 
 
 This separation matters because human review isn't a fixed safety multiplier. Studies of human oversight show that detection depends on base rates, signal quality, reviewer incentives, workload, and the information supplied with an output \citep{langer2025oversight}. More accurate component systems can also produce worse joint performance when people under- or over-rely on them \citep{buijsman2026accuracy}. The legal study records the workflow's final result rather than multiplying a model accuracy by an assumed review rate.
 
-Values enter before the final authorization as well as at it. Treating an unresolvable citation as a noncompensatory red line is a choice about what errors may trade off against other gains. Choosing 3\% as a tolerance and deciding whether lawyer minutes justify a narrower use are further choices. Validity evidence can show which empirical premises are supported; it can't choose the firm's loss function or discharge its professional duties \citep[747--749]{messick1995Validity}. Representing the authorization itself, rather than the premises feeding it, is a separate problem: it needs a semantics for what was delegated, over which operations, and for how long \citep{reynolds2026delegationassurance}.
+Values enter before the final authorization as well as at it. Treating an unresolvable citation as a noncompensatory red line is a choice about what errors may trade off against other gains. Choosing 3\% as a tolerance and deciding whether lawyer minutes justify a narrower use are further choices. Validity evidence can show which empirical premises are supported; it can't choose the firm's loss function or discharge its professional duties \citep[747--749]{messick1995Validity}. Representing the authorization itself, rather than the premises feeding it, is a separate problem: it needs a semantics for what was delegated, over which operations, and for how long \ifanon\citep{anonSelfDelegationAssurance}\else\citep{reynolds2026delegationassurance}\fi.
 
 \section{Aggregation Can Destroy Interface Evidence}\label{sec:aggregation}
 
@@ -483,7 +489,7 @@ A mean can also hide concentration. For a prespecified tail fraction \(q\), orde
 Worst-tail degradation still measures \mention{change}. A serious error repeated in both conditions has \(\delta_i=0\) and disappears from \(L\), \(\instab\), and \(\wtd_q\).
 
 
-The distinction is visible without simulation. Figure~\ref{fig:states} constructs three states of 100 items, all with \(L=0\). State A has no item movement. State B combines 50 improvements of .20 with 50 deteriorations of .20. State C has no movement either, but ten of its items carry an expected loss of .80 on the target outcome in both conditions, so it matches A on every change statistic and differs on absolute risk.
+The distinction is visible without simulation. Fig.~\ref{fig:states} constructs three states of 100 items, all with \(L=0\). State A has no item movement. State B combines 50 improvements of .20 with 50 deteriorations of .20. State C has no movement either, but ten of its items carry an expected loss of .80 on the target outcome in both conditions, so it matches A on every change statistic and differs on absolute risk.
 
 
 \begin{figure}[H]
@@ -538,7 +544,7 @@ Worst-decile change \(\wtd_{.1}\) & 0 & .20 & 0 \\
 Highest-risk decile, expected loss & not specified & not specified & .80 \\
 \bottomrule
 \end{tabular}
-\caption{Three item-level states with the same net change, constructed for illustration rather than measured. Horizontal position gives each item's change \(\delta_i\) and bar height the number of items. The change statistics separate state B from the other two and don't separate A from C, whose ten highest-risk items carry an expected loss of .80 in both conditions. A source report that publishes only \(L\) leaves a downstream claim about final defects unanswerable.}\label{fig:states}
+\caption{Three item-level states with the same net change, constructed for illustration rather than measured. Horizontal position gives each item's change \(\delta_i\) and bar height the number of items. The change statistics separate state B from the other two and don't separate A from C, whose ten highest-risk items carry an expected loss of .80 in both conditions. A source report that publishes only \(L\) leaves a downstream claim about final defects unanswerable}\label{fig:states}
 \end{figure}
 
 The states license different claims. State A supports stability on the observed items. State B defeats item stability despite the stable mean. State C shows why stability itself isn't safety: an unchanged serious failure remains serious. No estimator can recover which state obtained from \(L\) alone. The target claim determines which distinctions are required. A claim about answer-preserving context variation needs paired changes and their concentration; a deployment claim about final defects needs an absolute loss after the relevant review procedure.
@@ -560,7 +566,7 @@ This section makes no claim about how often the states occur in released evaluat
 
 \subsection{Evidence preservation at the interface}\label{ssec:preservation}
 
-A projectibility audit imposes an information requirement on source reports. The developer needn't publish every conceivable statistic, but it should retain the resolution at which target-relevant distinctions can later be checked: item identifiers or auditable equivalents, item-level outputs and scores, template or source clusters, prompts and tool conditions, repeated-response structure, scorer decisions, model build and lineage, and registered alterations. A domain profile is better than a total when domains matter, but it can still hide item-level reversals and stable failures within each domain. The same requirement arises wherever a report compresses a judgment: in safety evaluation, pass/fail labels obscure whether a failure came from a capability limit, an ambiguous policy, an instruction conflict, or an unstable evaluator judgment, and separating those is what lets a later claim rest on the right one \citep{reynolds2026adversarialpragmatics}.
+A projectibility audit imposes an information requirement on source reports. The developer needn't publish every conceivable statistic, but it should retain the resolution at which target-relevant distinctions can later be checked: item identifiers or auditable equivalents, item-level outputs and scores, template or source clusters, prompts and tool conditions, repeated-response structure, scorer decisions, model build and lineage, and registered alterations. A domain profile is better than a total when domains matter, but it can still hide item-level reversals and stable failures within each domain. The same requirement arises wherever a report compresses a judgment: in safety evaluation, pass/fail labels obscure whether a failure came from a capability limit, an ambiguous policy, an instruction conflict, or an unstable evaluator judgment, and separating those is what lets a later claim rest on the right one \ifanon\citep{anonSelfAdversarialPragmatics}\else\citep{reynolds2026adversarialpragmatics}\fi.
 
 The requirement isn't maximal disaggregation for its own sake. Raw data can be sensitive, proprietary, or too large to release. The relevant standard is whether a declared downstream claim can be audited. Access controls, secure evaluation environments, independent auditors, or sufficiently detailed derived data may answer the need. What doesn't answer it is an aggregate from which several target-relevant states are observationally indistinguishable.
 
@@ -646,7 +652,7 @@ Table~\ref{tab:declaration_fields} gives a compact record. It carries more than 
 
 \begin{table}[tbp]
 \centering\small
-\caption{Minimum projectibility-declaration record.}\label{tab:declaration_fields}
+\caption{Minimum projectibility-declaration record}\label{tab:declaration_fields}
 \begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.22\linewidth}
                     >{\raggedright\arraybackslash}p{0.31\linewidth}
                     >{\raggedright\arraybackslash}p{0.38\linewidth}@{}}
