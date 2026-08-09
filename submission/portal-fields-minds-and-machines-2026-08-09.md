@@ -37,10 +37,13 @@ cookie-wall blocks agent fetch; Brett supplied the page).
 
 | # | name | affiliation | dept | email | ORCID | corresponding |
 |---|---|---|---|---|---|---|
-| 1 | Brett Reynolds | Humber Polytechnic; University of Toronto | — | brett.reynolds@humber.ca | 0000-0003-0073-7195 | yes |
+| 1 | Brett Reynolds | **University of Toronto**, Department of Linguistics, Toronto ON M5S 3G3, Canada | Linguistics | brett.reynolds@humber.ca | 0000-0003-0073-7195 | yes |
+| 1b | (second affiliation) | Humber Polytechnic, Faculty of Liberal Arts and Sciences, Toronto ON M8V 1K8, Canada | Liberal Arts and Sciences | — | — | — |
 
 - [x] Sole author, so no coauthor approval and no order question.
-- [ ] Department and postal code: **not held locally** — see section 11.
+- [x] **Lead with the Toronto affiliation.** U of T pays any APC, and Springer
+      routes waivers and read-and-publish eligibility off the corresponding
+      author's listed institution, so the order is not cosmetic.
 
 ## 4. Files and portal item types
 
@@ -73,14 +76,20 @@ Up to six requested. None has been contacted about this paper
 
 | # | name | why | address source |
 |---|---|---|---|
-| 1 | Timo Freiesleben | Nearest rival; answered directly in §2.3 and §6.2 | arXiv:2603.15121 |
-| 2 | Olawale Salaudeen | Nearest neighbour, positioned in Table 1 | arXiv:2505.10573 |
-| 3 | Andrew M. Bean | Construct validity across 445 benchmarks | arXiv:2511.04703 |
-| 4 | Markus Langer | M&M 35(1); §4.5 rests on it | M&M 35(1) |
-| 5 | Stefan Buijsman | M&M 36(14); same §4.5 paragraph | M&M 36(14) |
-| 6 | Kristian Gonzalez Barman | M&M 34(6); engaged in §6.2 | M&M 34(6) |
+| # | name | institution | email | why | source |
+|---|---|---|---|---|---|
+| 1 | Timo Freiesleben | LMU Munich | `timo.freiesleben@lmu.de` | Nearest rival; answered directly in §2.3 and §6.2 | `literature/freiesleben2026establishing.pdf` p1, marked "Corresponding authors" |
+| 2 | Olawale Salaudeen | MIT | `olawale@mit.edu` | Nearest neighbour, positioned in Table 1 | arXiv:2505.10573v4 p1 |
+| 3 | Andrew M. Bean | Oxford Internet Institute | `andrew.bean@oii.ox.ac.uk` | Construct validity across 445 benchmarks | `literature/bean2025measuring.pdf` p1 |
+| 4 | Markus Langer | University of Freiburg | `markus.langer@psychologie.uni-freiburg.de` | M&M 35(1); §4.5 rests on it | arXiv:2404.04059v2 (co-authored preprint) |
+| 5 | Stefan Buijsman | TU Delft | `s.n.r.buijsman@tudelft.nl` | M&M 36(14); same §4.5 paragraph | `literature/buijsman_2026_...MM.pdf` p1 |
+| 6 | Kristian Gonzalez Barman | Radboud University (now Ghent) | `gonzalezbarman@ru.nl` | M&M 34(6); engaged in §6.2 | arXiv:2304.10327 p1 |
 
-- [ ] Institutional addresses **must be read off each paper**, not reconstructed.
+- [x] Every address read off a paper, not reconstructed.
+- [!] **Langer's address had a hyphen eaten by `pdftotext` at a line break**
+      ("unifreiburg"); the domain is `uni-freiburg.de`. Barman has since moved
+      from Radboud to Ghent, so `ru.nl` may bounce; Editorial Manager accepts a
+      homepage instead, `kristiangbarman.com`.
 - [x] No coauthors or collaborators; no conflict under the venue's rule.
 
 ## 7. History and overlap
@@ -91,18 +100,22 @@ Up to six requested. None has been contacted about this paper
 
 ## 8. Publishing options
 
-- [ ] Open Choice / APC decision: **Brett's call** — see section 11.
+- [x] **Open Choice (open access). University of Toronto pays.** List Toronto as
+      the corresponding affiliation so Springer's eligibility check sees it.
+- [ ] Confirm at submission whether U of T's Springer agreement covers M&M and
+      whether the APC is waived outright or invoiced; the portal asks during
+      submission, not after acceptance.
 
 ## 11. Open before login
 
 | field | why unresolved | owner |
 |---|---|---|
-| Department and postal code for the affiliation | not held in any local file | Brett |
-| Six reviewer email addresses | must be read off the cited papers, not recalled | Brett |
-| Open Choice vs subscription, and who pays any APC | no decision on record | Brett |
-| Blind **source** bundle | not built; the working `.tex` is non-blind and would leak identity | agent, on request |
-| Approval of the venue decision record | record is still `proposed` | Brett |
+| Blind **source** bundle | not built; the working `.tex` is non-blind and would leak identity | agent |
+| Approval of the venue decision record, and the three forecasts | record is still `proposed` | Brett |
+
+Resolved 2026-08-09: affiliations and postal codes supplied; all six reviewer
+addresses read off their papers; open access with Toronto paying.
 
 ## Stop conditions
 
-- [x] Section 11 is **not** empty. **Do not open the portal.**
+- [x] Section 11 has two rows left, one of them mine. **Do not open the portal.**
