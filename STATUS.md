@@ -3,6 +3,7 @@ slug: agi-evaluation
 kind: paper
 title: 'When Benchmark Inferences Do Not Compose: Projectibility in AI Evaluation'
 stage: complete
+external_review: 'Minds and Machines, submitted 2026-08-09, status New Submission'
 external: preprint
 blocked_on: []
 updated: 2026-08-09
@@ -17,7 +18,7 @@ arxiv_v2: submit/7929512, replacement of 2607.26159, status processing. Unsubmit
   submission gate's cold read; arXiv keeps the submission id and generates no extra version for
   edits made before announcement. Not yet announced. Next announcement Monday evening ET.
   Verify on announcement that the NEW package went up: v1 is 2,852 KB, the v2 tarball is 2.6 MB.
-next_action: Submit to Minds and Machines via Editorial Manager. Package built and gate-cleared 2026-08-09; venue record approved; portal-fields section 11 empty. Formatting/disclosure
+next_action: Await the Minds and Machines desk decision. If the office asks for editable source, upload submission/blind-source.tar.gz (see DECISIONS 2026-08-09 for item types). Confirm the arXiv v2 announcement Monday evening.
   requirements and run the submission gate
 notes: 'blocked_on is UNCLEAR between two readings. STATUS.md''s own "Next Steps" reads as immediately
   actionable: "Prepare and submit the journal package to Minds and Machines, the primary venue selected

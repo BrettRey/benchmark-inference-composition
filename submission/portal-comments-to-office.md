@@ -21,11 +21,15 @@ A preprint is posted at arXiv:2607.26159. The manuscript is not under
 consideration at any other journal, and no part of it has been published
 elsewhere.
 
-The submission is prepared for double-blind review. The manuscript PDF and the
-LaTeX source bundle have both been checked for identifying information: author
-block, affiliations, ORCID, email, PDF metadata, the companion repository URL,
-and self-citations, which appear as "Author (2026)" with the reference entries
-withheld. Full details are on the separate title page.
+The submission is prepared for double-blind review. The manuscript PDF has been
+checked for identifying information: author block, affiliations, ORCID, email,
+PDF metadata, the companion repository URL, and self-citations, which appear as
+"Author (2026)" with the reference entries withheld. Identifying details are on
+the separate title page only.
+
+An anonymized LaTeX source bundle (manuscript, preamble, bibliography, and the
+freely licensed fonts the document uses) is prepared and can be supplied
+immediately on request, or at revision, whichever the office prefers.
 
 Use of large language models as drafting and editing aids is declared in full on
 the title page. It went beyond AI-assisted copy editing, so it is declared
