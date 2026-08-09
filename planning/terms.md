@@ -25,6 +25,7 @@ mentions explicitly says "may need less" than a linguistics or public audience.
 | commensurability | free | Defined at §6.1 at first use. |
 | compensability | free | Defined at §6.1 at first use. |
 | profile | earned | Glossed at first technical use, §4.5: "the vectors of domain scores a battery reports". Portfolio canon reserves *profile* for the worldly relation; this paper's sense is a score vector, and the qualifier belongs in the canon register rather than in either manuscript. |
+| universe of admissible observations | earned | Brennan's term, not the paper's. Introduced at §2.3 and explained by contrast in the same sentence: a G-study estimates variance components over it, a D-study generalizes to a universe that may be narrower. One use. |
 | projectibility audit | earned | Glossed at §1 and again at §2.2. |
 | node | earned | Defined at §3.1 with its five fields. |
 | edge | earned | Defined at §3.1. |

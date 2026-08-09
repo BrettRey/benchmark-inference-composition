@@ -1,7 +1,7 @@
 # arXiv v2 replacement — 2607.26159
 
 **Package:** `submission/when-benchmark-inferences-do-not-compose-arxiv-v2.tar.gz` (2.6 MB)
-sha256 `0da40d04eeeefd491e5cebfd60c2abd9049852ea662e0af90bfd4cbcd4e9406c`
+sha256 `1794ef8efb920aa4297e9d45c93037c942f149b479927bcce8fa22cfbe6779df`
 
 Built by copying the package arXiv accepted in July and changing only what had
 to change: the `.tex` and `.bbl` are new, `references.bib` and
@@ -25,22 +25,16 @@ all fonts embedded, qpdf clean, 48 references. Against the local PDF: 16,680
 word tokens in both, two differing, being one hyphenated word wrapping at a
 different line break.
 
-## Comments field — REPLACE, do not append (limit 400 chars)
+## Comments field — REPLACE, do not append (398/400 chars)
 
-The posted v1 field is 364 of 400 characters, so there is no room to append. It
-must be rewritten, and "35 pages" is now wrong. Recommended (335 chars):
+The posted v1 field is 364 of 400, so there is no room to append; it must be
+rewritten, and its "35 pages" is now wrong.
 
-34 pages, 2 figures, 5 tables. v2 substantially revises Secs. 5-8 and the conclusion, adds a measured instance of factor-structure instability, and corrects a claim in Sec. 3.3 that endpoint alignment suffices for composition. Supersedes the withdrawn arXiv:2510.15236. Code: https://github.com/BrettRey/benchmark-inference-composition
+34 pages, 2 figures, 5 tables. v2 substantially revises Secs. 5-8 and the conclusion, positions generalizability theory as a neighbouring framework, adds a measured instance of factor-structure instability, and corrects a claim in Sec. 3.3 that endpoint alignment suffices for composition. Supersedes the withdrawn arXiv:2510.15236. Code: https://github.com/BrettRey/benchmark-inference-composition
 
-Alternative if the itemised withdrawal list should stay (311 chars), at the
-cost of saying almost nothing about v2. That detail otherwise survives in v1's
-version metadata and in the withdrawal notice on 2510.15236 itself:
+## Abstract — REPLACE the posted one, it has changed (228 words)
 
-34 pages, 2 figures, 5 tables. v2: Secs. 5-8 substantially revised; corrects a claim in Sec. 3.3. Supersedes arXiv:2510.15236, whose homeostatic property-cluster account and proposed centrality-prior and cluster-stability measures are withdrawn. Code: https://github.com/BrettRey/benchmark-inference-composition
-
-## Abstract — REPLACE the posted one, it has changed (213 words)
-
-An AI benchmark result rarely reaches a consequential claim in one step. Evaluators generalize it to further cases, interpret it as evidence of capability, extrapolate it to new tasks, transport it to another system or site, and combine it with assumptions about human review and downstream consequences. Validity-centred approaches require evidence for each claim. This paper makes explicit and operationalizes a problem those approaches leave to the analyst: warranted links don't automatically make a warranted chain. The target of one study may not be the source of the next; system, population, outcome, or conditions may change at the interface; and shared data or model lineage may make apparently independent support dependent. Projectibility concerns whether a bounded extension from observed to unobserved cases is warranted. Goodman supplies the problem of rival extensions; argument-based validity supplies an architecture for testing them. The contribution is an interface audit for distributed AI evidence: typed source and target descriptions, and a procedure separating endpoints that never meet from endpoints that meet while warrant fails to cross. A legal-research case shows how benchmark evidence and a deployment study can each be sound while remaining parallel. A known-truth demonstration shows why aggregate stability can erase distinctions a later projection requires. The resulting projectibility audit diagnoses unsupported joins in benchmark-to-use arguments.
+An AI benchmark result rarely reaches a consequential claim in one step. Evaluators generalize it to further cases, interpret it as evidence of capability, extrapolate it to new tasks, transport it to another system or site, and combine it with assumptions about human review and downstream consequences. Validity-centred approaches require evidence for each claim. This paper makes explicit and operationalizes a problem those approaches leave to the analyst: warranted links don't automatically make a warranted chain. The target of one study may not be the source of the next; system, population, outcome, or conditions may change at the interface; and shared data or model lineage may make apparently independent support dependent. Projectibility concerns whether a bounded extension from observed to unobserved cases is warranted. Goodman supplies the problem of rival extensions; argument-based validity supplies an architecture for testing them. The contribution is an interface audit for distributed AI evidence: typed source and target descriptions, and a procedure separating endpoints that never meet from endpoints that meet while warrant fails to cross. A legal-research case shows how benchmark evidence and a deployment study can each be sound while remaining parallel. A known-truth demonstration shows why aggregate stability can erase distinctions a later projection requires. The resulting projectibility audit is a link-by-link record of what each step projects and on what evidence, and it diagnoses unsupported joins in benchmark-to-use arguments.
 
 ## Unchanged metadata
 
