@@ -909,3 +909,13 @@ Also disclosed to the office: the arXiv preprint, no simultaneous submission, th
 The manuscript number and the submission's full context are recorded in the private prediction ledger rather than here. This repository is public, and the portfolio's own origin note records that a journal manuscript number in a public repo is what caused `.house-style` to be deleted and recreated. The venue itself is already public in this repo's `CLAUDE.md` and in the venue decision record, so only the number is withheld.
 
 Forecasts on file: P(reaches external review) 0.75, P(accepted) 0.30, first decision by 2026-10-15, recorded as agent estimates adopted rather than independently formed.
+
+2026-08-09 — Built `submission/springer-safe-source.tar.gz`, a fallback LaTeX bundle for Minds and Machines carrying no bundled fonts. Springer's LaTeX tips say "do not use own macros or fonts", and the arXiv bundle ships seven `.ttf` files because arXiv has no system fonts at all. The two requirements are opposite, so the paper now has two source bundles for two different reasons.
+
+The Springer variant uses Latin Modern throughout, which ships with TeX Live and resolves on any standard installation. Three files, 71 KB against the arXiv bundle's 2.6 MB. Verified from a clean extraction with nothing else present: 0 errors, 0 undefined, 0 identity hits across all three files, 0 non-ASCII characters, and no font files at all.
+
+Two things the build taught, both of which would have surfaced as errors in Springer's generated proof PDF rather than locally. Declaring `BoldFont={Latin Modern Roman Bold}` fails: bold and italic are styles within the Latin Modern Roman family, not separate families, so fontspec resolves them itself and naming them explicitly names fonts that do not exist. And the variant runs to **38 pages, not 34**, because Latin Modern sets wider than EB Garamond. There is no length limit, so this costs nothing, but the page count in any comments field would be wrong.
+
+Content verified identical rather than assumed: reducing both PDFs to letters only, stripped of spaces, hyphens and line breaks, every remaining difference is a running head repositioned across the four extra pages. No body text differs.
+
+**Which bundle to send.** Send this one if the office asks for source. It complies with the stated instruction, is 36 times smaller, and cannot fail on a font. Keep `blind-source.tar.gz` only if someone specifically wants the submitted typography reproduced.
