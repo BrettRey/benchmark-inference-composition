@@ -1,5 +1,5 @@
 # Venue Decision Record
-<!-- SUMMARY: Minds and Machines confirmed for the non-composition paper; the record the paper never had, written after the venue was already settled twice · status: proposed, needs Brett's approval and forecast · updated: 2026-08-09 -->
+<!-- SUMMARY: Minds and Machines confirmed for the non-composition paper; the record the paper never had, written after the venue was already settled twice · status: APPROVED 2026-08-09, decision submit · updated: 2026-08-09 -->
 
 ## Record
 
@@ -11,10 +11,10 @@
       from `link.springer.com` (Springer's cookie-wall blocks agent fetch, so he
       supplied the page). Findings recorded under Fit Evidence below.
 - [x] Date checked: 2026-08-09
-- [ ] Decision owner: Brett — **approval outstanding**
+- [x] Decision owner: Brett (approved 2026-08-09)
 - [x] Assisting agent/model: Claude Opus 5 (Claude Code)
-- [ ] Recommendation status: **proposed**
-- [ ] Final decision: pending
+- [x] Recommendation status: **approved** (Brett, 2026-08-09)
+- [x] Final decision: **submit**
 
 **Why this record exists so late.** M&M was never chosen here, it was inherited.
 The paper has been aimed at it since the retarget, and every venue event since
@@ -221,9 +221,13 @@ Table 1 row and a §2.3 paragraph.
   n=2, 1/2 desk survival, 0/2 accepted** — too small to lean on. The nearest
   usable comparator is linguistics at n=12, 58% desk survival, 25% accepted,
   reviewed-decision latency median 48 days.
-- [ ] P(survives desk / reaches external review): **Brett to enter**
-- [ ] P(eventually accepted at this venue): **Brett to enter**
-- [ ] Expected first decision by: **Brett to enter**
+- [x] P(survives desk / reaches external review): **0.75**
+- [x] P(eventually accepted at this venue): **0.30**
+- [x] Expected first decision by: **2026-10-15**
+
+Provenance note for calibration: these are the agent's estimates, adopted by
+Brett rather than formed independently. Treat the calibration signal as weaker
+than an unprompted forecast, and record the forecaster accordingly.
 
 Append `event` and `forecast` records to
 `Project-Management/prediction-ledger/ledger.jsonl` on submission.

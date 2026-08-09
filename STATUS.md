@@ -4,8 +4,7 @@ kind: paper
 title: 'When Benchmark Inferences Do Not Compose: Projectibility in AI Evaluation'
 stage: complete
 external: preprint
-blocked_on:
-- brett-decision
+blocked_on: []
 updated: 2026-08-09
 source:
 - STATUS.md
@@ -18,7 +17,7 @@ arxiv_v2: submit/7929512, replacement of 2607.26159, status processing. Unsubmit
   submission gate's cold read; arXiv keeps the submission id and generates no extra version for
   edits made before announcement. Not yet announced. Next announcement Monday evening ET.
   Verify on announcement that the NEW package went up: v1 is 2,852 KB, the v2 tarball is 2.6 MB.
-next_action: Prepare and submit the journal package to Minds and Machines; apply current formatting/disclosure
+next_action: Submit to Minds and Machines via Editorial Manager. Package built and gate-cleared 2026-08-09; venue record approved; portal-fields section 11 empty. Formatting/disclosure
   requirements and run the submission gate
 notes: 'blocked_on is UNCLEAR between two readings. STATUS.md''s own "Next Steps" reads as immediately
   actionable: "Prepare and submit the journal package to Minds and Machines, the primary venue selected

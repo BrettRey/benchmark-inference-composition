@@ -1,5 +1,5 @@
 # Portal Fields Record — Minds and Machines
-<!-- SUMMARY: answer sheet for the Editorial Manager session; section 11 lists what is still unanswered · status: incomplete, section 11 non-empty · updated: 2026-08-09 -->
+<!-- SUMMARY: answer sheet for the Editorial Manager session; section 11 lists what is still unanswered · status: complete, cleared to open the portal · updated: 2026-08-09 -->
 
 Every value carries a source pointer. A value with no pointer has not been
 checked. Author instructions read 2026-08-09 from `link.springer.com` (Springer's
@@ -12,7 +12,7 @@ cookie-wall blocks agent fetch; Brett supplied the page).
 - [x] Canonical source: `when-benchmark-inferences-do-not-compose.tex`
 - [x] Canonical blind PDF: `submission/blind-manuscript.pdf` (34 pp)
 - [x] Account: brettrey / brett.reynolds@humber.ca
-- [ ] Decision owner: Brett — **approval outstanding**
+- [x] Decision owner: Brett (approved 2026-08-09)
 - [x] Assisting model: Claude Opus 5 (Claude Code)
 
 ## 1. Routing
@@ -110,12 +110,23 @@ Up to six requested. None has been contacted about this paper
 
 | field | why unresolved | owner |
 |---|---|---|
-| Blind **source** bundle | not built; the working `.tex` is non-blind and would leak identity | agent |
-| Approval of the venue decision record, and the three forecasts | record is still `proposed` | Brett |
+**Empty.** Every required field has a value above.
 
 Resolved 2026-08-09: affiliations and postal codes supplied; all six reviewer
-addresses read off their papers; open access with Toronto paying.
+addresses read off their papers; open access with Toronto paying; blind source
+bundle built and leak-scanned; venue record approved with forecasts entered.
 
 ## Stop conditions
 
-- [x] Section 11 has two rows left, one of them mine. **Do not open the portal.**
+- [x] Section 11 is empty.
+- [x] Every value carries a source pointer.
+- [x] Abstract, title and keywords match the canonical PDF.
+- [x] Field limits taken from the guidelines read on 2026-08-09.
+- [x] No reviewer-facing file exposes identity: `blind-manuscript.pdf` and all
+      thirteen files in `blind-source.tar.gz` scanned individually, zero hits.
+- [x] Every suggested reviewer verified real and currently placeable, each
+      address read off their own paper.
+- [x] OA choice compatible with the posted preprint; U of T named as payer.
+- [x] Data statement promises only what is live.
+
+**Cleared to open the portal.**
