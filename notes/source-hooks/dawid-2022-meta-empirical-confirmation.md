@@ -1,0 +1,19 @@
+# Source hook: Dawid 2022 meta-empirical confirmation -> benchmark inference composition
+<!-- SUMMARY: supplies a test for when "no better benchmark exists" is an argument versus a preference, and states the local/global scope restriction that is the composition problem in another vocabulary · status: uncited; new thread · updated: 2026-08-06 -->
+
+- **Central note:** `literature/dawid_2022_meta_empirical_confirmation_three_criticisms.notes.md`
+- **Cite as:** Richard Dawid, "Meta-empirical confirmation: Addressing three points of criticism," *Studies in History and Philosophy of Science* 93 (2022), 66–71, doi:10.1016/j.shpsa.2022.02.006.
+
+**Why an AI-evaluation paper should care about a string-theory dispute.** Dawid is defending trust in a theory that has no direct empirical confirmation, on the strength of observations about how the research process has gone. AI evaluation runs an unacknowledged version of the same manoeuvre: a benchmark is trusted partly because it is the one the field converged on, because nothing better has displaced it, and because measures of this kind have tracked capability before. Those are, respectively, a no-alternatives argument, a no-alternatives argument, and a meta-inductive one. The paper's thesis is that benchmark inferences don't compose; Dawid supplies vocabulary for the class of warrant that gets smuggled in when they appear to.
+
+**Two things worth lifting.**
+
+**1. The methodological-preference regress, as a test.** Dawid's condition on a no-alternatives argument is that it "needs to be based on a specified class of physical phenomena" no alternative can represent. A NAA resting on a *methodological* choice faces a regress — there's no way to assign probabilities to methodological choices — and so "deflates to a mere statement of methodological preference and provides no basis for assessing the relevant spectrum of unconceived alternatives."
+
+Applied here: "no better benchmark exists for reasoning" is only an argument if it names a class of behaviours no alternative instrument could measure. If what it actually names is a preference about how evaluation should be conducted — multiple choice, held-out test sets, this kind of prompt — the claim deflates, and no amount of field consensus repairs it. That is a sharp, citable diagnostic, and it comes from outside AI, which makes it harder to wave off.
+
+**2. Local versus global, which is the composition problem restated.** "UEA, to the contrary, is a local argument. It is deployed to support a theory's viability within a given empirical horizon." Dawid separates warrant for viability-within-a-horizon from the global realist claim, and shows that an objection fatal to the second leaves the first standing. That is the same structure the paper is defending: a benchmark result licenses a claim within a stated scope, and the failure is in the step that carries it beyond. Dawid reached it in physics, decades into a different argument, which is useful independent corroboration that the local/global distinction is doing real epistemic work rather than being a hedge.
+
+**One caution against over-borrowing.** Dawid is defending MEC; the paper is restricting what benchmark inference licenses. Using him as an ally requires care, because his conclusion is that meta-level evidence *can* confirm, not that it can't. The honest use is the machinery — E versus F, the scope restriction, the regress test — not the verdict. He also insists the three arguments only work in mutual reinforcement and are "of insufficient strength if viewed in isolation," which is itself a composition claim worth noting: he thinks weak warrants compose, under conditions he states.
+
+**Status.** Published, peer-reviewed, DOI stable, citable. Not open access, so the PDF stays in `literature/` and out of the public repo. Primary statement of the framework is Dawid (2013), not held.

@@ -48,7 +48,7 @@ Projectibility is **the degree of warrant for a bounded extension from observed 
 | Messick (1995) | Unified validity of interpretations and uses |
 | Embretson (1983) | Construct representation versus nomothetic span |
 | Goodman (1955); Boyd (1991) | Warranted projection vocabulary |
-| Hendrycks et al. (2025) | Motivating ten-domain AGI battery |
+| Hendrycks et al. (2025) | One CHC-organized AGI proposal, cited once in §6.2. Held over from the withdrawn v1; it does not motivate this paper. The motivating case is the legal-research chain (Magesh et al. 2025, 3 citations across §3.4 and §4), and §1's opening chain names no battery. |
 | Zhang, Koyejo, and Yang (2026), arXiv v2 | Aggregate cancellation and released trial data |
 | Raji et al. (2021); Bowman and Dahl (2021) | Broad benchmark and construct-validity problems |
 | Liu et al. (2024) | Evidence-centred benchmark design (a neighbouring framework) |
