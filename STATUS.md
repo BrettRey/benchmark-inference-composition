@@ -6,13 +6,15 @@ stage: complete
 external: preprint
 blocked_on:
 - brett-decision
-updated: 2026-07-28
+updated: 2026-08-09
 source:
 - STATUS.md
 - PORTFOLIO.md
 venue: Minds and Machines
 preprints:
 - arxiv:2607.26159
+arxiv_v2: submit/7929512 submitted 2026-08-09, replacement of 2607.26159, status processing at
+  time of writing. Not yet announced; the abstract page still shows v1 until arXiv releases it.
 next_action: Prepare and submit the journal package to Minds and Machines; apply current formatting/disclosure
   requirements and run the submission gate
 notes: 'blocked_on is UNCLEAR between two readings. STATUS.md''s own "Next Steps" reads as immediately
