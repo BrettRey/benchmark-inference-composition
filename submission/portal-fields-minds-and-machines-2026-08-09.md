@@ -76,14 +76,59 @@ Up to six requested. None has been contacted about this paper
 
 | # | name | why | address source |
 |---|---|---|---|
-| # | name | institution | email | why | source |
-|---|---|---|---|---|---|
-| 1 | Timo Freiesleben | LMU Munich | `timo.freiesleben@lmu.de` | Nearest rival; answered directly in §2.3 and §6.2 | `literature/freiesleben2026establishing.pdf` p1, marked "Corresponding authors" |
-| 2 | Olawale Salaudeen | MIT | `olawale@mit.edu` | Nearest neighbour, positioned in Table 1 | arXiv:2505.10573v4 p1 |
-| 3 | Andrew M. Bean | Oxford Internet Institute | `andrew.bean@oii.ox.ac.uk` | Construct validity across 445 benchmarks | `literature/bean2025measuring.pdf` p1 |
-| 4 | Markus Langer | University of Freiburg | `markus.langer@psychologie.uni-freiburg.de` | M&M 35(1); §4.5 rests on it | arXiv:2404.04059v2 (co-authored preprint) |
-| 5 | Stefan Buijsman | TU Delft | `s.n.r.buijsman@tudelft.nl` | M&M 36(14); same §4.5 paragraph | `literature/buijsman_2026_...MM.pdf` p1 |
-| 6 | Kristian Gonzalez Barman | Radboud University (now Ghent) | `gonzalezbarman@ru.nl` | M&M 34(6); engaged in §6.2 | arXiv:2304.10327 p1 |
+Editorial Manager asks for a reason per reviewer. Paste the "Reason" text as
+written; each names the specific expertise and how it maps to a named section,
+which is what an editor can act on. None has been contacted about this paper.
+
+**1. Timo Freiesleben** — LMU Munich — `timo.freiesleben@lmu.de`
+Source: `literature/freiesleben2026establishing.pdf` p1, marked "Corresponding authors".
+> Reason: Freiesleben has developed the leading alternative account of what
+> grounds a capability claim from benchmark evidence, arguing that construct
+> validity for LLM benchmarks requires nomological networks rather than an
+> inferential account. Sections 2.3 and 6.2 respond to that argument directly.
+> He is the reader best placed to judge whether the response holds, and his
+> disagreement would be as informative as his assent.
+
+**2. Olawale Salaudeen** — MIT — `olawale@mit.edu`
+Source: arXiv:2505.10573v4 p1.
+> Reason: Lead author of a claim-aware validity framework for AI evaluation that
+> maps measurements to the specific claims they support and distinguishes the
+> stakeholders who produce evidence from those who rely on it. That framework is
+> the paper's nearest neighbour and is positioned against it in Table 1, so he can
+> judge whether the interface question is genuinely additional to it.
+
+**3. Andrew M. Bean** — Oxford Internet Institute — `andrew.bean@oii.ox.ac.uk`
+Source: `literature/bean2025measuring.pdf` p1.
+> Reason: Led an empirical audit of construct validity across 445 language-model
+> benchmarks, which is the largest systematic evidence base on how benchmark
+> claims outrun what benchmarks measure. He can assess whether the failure this
+> paper describes is one practitioners actually make, and whether the proposed
+> record is something an evaluator could complete.
+
+**4. Markus Langer** — University of Freiburg — `markus.langer@psychologie.uni-freiburg.de`
+Source: arXiv:2404.04059v2, co-authored preprint. NB the domain is `uni-freiburg.de`.
+> Reason: Co-author of the signal-detection account of effective human oversight
+> published in this journal, on which Section 4.5's treatment of review as an
+> empirical relation rather than a fixed safety multiplier depends. He is
+> positioned to say whether the paper's use of that literature is sound and
+> whether its claims about what review can be shown to achieve are too strong.
+
+**5. Stefan Buijsman** — TU Delft — `s.n.r.buijsman@tudelft.nl`
+Source: `literature/buijsman_2026_accuracy_not_all_you_need_explainability_MM.pdf` p1.
+> Reason: Published in this journal on why component accuracy does not determine
+> the quality of the joint human-AI outcome, which is the mechanism Section 4.5
+> relies on when it argues that more accurate components can produce worse
+> results through reliance. He works on the philosophy of AI evaluation and
+> explainability, and can judge the decision-facing half of the argument.
+
+**6. Kristian Gonzalez Barman** — Ghent University (Radboud at time of publication) — `gonzalezbarman@ru.nl`
+Source: arXiv:2304.10327 p1. He has since moved to Ghent, so this address may bounce; `kristiangbarman.com` lists current contact details.
+> Reason: Lead author of a benchmark for scientific understanding built from
+> philosophy of science rather than from domain coverage, published in this
+> journal. Section 6.2 treats that work as the positive case, arguing that
+> theorized benchmark construction strengthens the upstream links without
+> settling the downstream projections. He can judge whether that characterisation
+> is fair and whether the distinction survives.
 
 - [x] Every address read off a paper, not reconstructed.
 - [!] **Langer's address had a hyphen eaten by `pdftotext` at a line break**
