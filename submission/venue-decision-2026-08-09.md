@@ -178,11 +178,28 @@ Editorial/reviewer fit:
 
 Resolution:
 
-- [ ] Risks resolved before package work
-- [ ] Risks accepted explicitly by Brett
-- [x] **Risks unresolved: pause.** Guidelines are now verified, but three items
-      block package work: the self-citation blinding conflict, the missing
-      Declarations title page, and Brett's approval of this record.
+- [x] **Risks resolved before package work, two of three.**
+      - Self-citation blinding conflict: FIXED. Both `\citep` sites switch on
+        `\ifanon`, backed by redacted scaffolding entries. A blind build scores
+        zero on Reynolds, Humber, the email, the GitHub handle and the ORCID,
+        with an empty `pdfauthor`, and renders "(Author, 2026a/b)".
+      - Declarations title page: FIXED. `submission/title-page.tex`, one page,
+        carrying funding, competing interests, ethics, consent, data/code, author
+        contributions, LLM use, and prior dissemination.
+      - Figure captions: FIXED to Springer form, bold "Fig. N", no colon, no
+        terminal punctuation, tables matched for consistency.
+- [ ] **Outstanding: Brett's approval of this record, and the forecast numbers.**
+      Package work may proceed; the portal may not open until this is approved
+      and `submission/portal-fields-*.md` has an empty section 11.
+
+**Submission gate, run 2026-08-09: all three gates PASS.** Quotation gate found
+and fixed a dropped internal citation in the Kane p.64 quotation. Terminology
+gate needed `planning/terms.md`, now written. Legibility gate: 0 MISSING on
+problem, debate, gap and contribution from three readers, 2/3 advance,
+convergent problem statements. The unanimous reservation, that the contribution
+may not exceed Kane restated, is answered in §2.3 and now signposted in §1; the
+one variant with no answer anywhere, generalizability theory, has been given a
+Table 1 row and a §2.3 paragraph.
 
 ## Evidence And Motivation Test
 
