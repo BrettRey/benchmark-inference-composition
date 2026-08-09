@@ -8,7 +8,7 @@ MAIN = when-benchmark-inferences-do-not-compose
 OUTDIR = .
 
 # Targets
-.PHONY: all clean distclean view help
+.PHONY: all clean distclean view help check pointers
 
 # Default target: build the PDF
 all: $(MAIN).pdf
@@ -29,6 +29,21 @@ $(MAIN).pdf: $(MAIN).tex references.bib references-local.bib
 quick: $(MAIN).tex
 	@echo "==> Quick build (single pass)..."
 	$(LATEX) -output-directory=$(OUTDIR) $(MAIN).tex
+
+# Reader-facing checks. `pointers` is a worklist, not a pass/fail gate: it
+# enumerates every place the prose points instead of naming, for one review
+# pass. See tools/pointer-check/README.md for why it doesn't judge.
+POINTER_CHECK = ../../../tools/pointer-check/pointer_check.py
+
+pointers: $(MAIN).tex
+	@python3 $(POINTER_CHECK) $(MAIN).tex
+
+# Everything a reader-facing build should satisfy, plus the worklist.
+check: $(MAIN).pdf
+	@echo "==> undefined references: $$(grep -c Undefined $(MAIN).log)"
+	@echo "==> em-dashes: $$(grep -c -- '---' $(MAIN).tex)"
+	@echo "==> pages: $$(pdfinfo $(MAIN).pdf | grep -m1 Pages | grep -oE '[0-9]+')"
+	@python3 $(POINTER_CHECK) $(MAIN).tex --quiet
 
 # Clean build artifacts (keep PDF)
 clean:
@@ -56,5 +71,7 @@ help:
 	@echo "  make quick    - Quick build (single pass, no bib update)"
 	@echo "  make clean    - Remove build artifacts (keep PDF)"
 	@echo "  make distclean- Remove everything including PDF"
+	@echo "  make check    - Build, then report undefined refs, em-dashes, pages, pointer worklist"
+	@echo "  make pointers - Pointer worklist only (tools/pointer-check)"
 	@echo "  make view     - Open PDF (macOS only)"
 	@echo "  make help     - Show this help message"
