@@ -205,6 +205,7 @@ An aggregate can describe its construction sample without supporting a broader i
 ## Next Steps
 
 - Choose the successor venue after the *Minds and Machines* desk rejection (2026-10-26): grade the Springer Transfer Desk suggestions against the shortlist in DECISIONS 2026-10-26, write a new venue decision record, then re-run the submission gate against the new venue's rules. Page one and the self-citation blinding are venue-indexed; redo them last.
+- At the next revision, move the Freiesleben and Zezulka entry (`freieslebenZezulka2025benchmarking`, cited twice) from arXiv:2510.23191 to the *Philosophy of Science* version (2026-09-28, doi:10.1017/psa.2026.10280), and read the published text against the preprint, since the subtitle changed. The entry lives in the central bibliography, so the change goes through `/push-bib`. The same finding makes *Philosophy of Science* the first venue to check (DECISIONS 2026-10-26).
 - Review the requested library scan of *Validity* when it arrives and incorporate it only if it changes the argument or source support.
 - Tag and archive the empirical companion, with a locked environment and a release DOI, when the submission commit is fixed.
 - Post the paper as a new arXiv submission and update public status surfaces when the new identifier exists.
