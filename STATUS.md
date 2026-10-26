@@ -52,7 +52,7 @@ claim:
   argues: >-
     Benchmark inferences do not compose: you cannot aggregate benchmark results into an
     overall capability score because the underlying constructs are not projectible across
-    the aggregation. arXiv 2607.26159; submitted to *Minds and Machines*.
+    the aggregation. arXiv 2607.26159; desk-rejected by *Minds and Machines* 2026-10-26, successor venue pending.
   provenance: drafted-from-map
   claim_updated: 2026-09-04
 ---
