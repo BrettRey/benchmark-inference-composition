@@ -3,23 +3,29 @@ slug: agi-evaluation
 kind: paper
 title: 'When Benchmark Inferences Do Not Compose: Projectibility in AI Evaluation'
 stage: complete
-external_review: 'Minds and Machines, submitted 2026-08-09, status New Submission'
-external: preprint
-blocked_on: []
-updated: 2026-08-09
+external_review: 'Minds and Machines, submitted 2026-08-09, desk rejected 2026-10-26 (priority screen, no comments)'
+external: rejected
+blocked_on:
+- brett-decision
+updated: 2026-10-26
 source:
 - STATUS.md
 - PORTFOLIO.md
 venue: Minds and Machines
 preprints:
 - arxiv:2607.26159
-arxiv_v2: submit/7929512, replacement of 2607.26159, status processing. Unsubmitted and
-  resubmitted 2026-08-09 (Sunday) to carry the generalizability-theory positioning found by the
-  submission gate's cold read; arXiv keeps the submission id and generates no extra version for
-  edits made before announcement. Not yet announced. Next announcement Monday evening ET.
-  Verify on announcement that the NEW package went up: v1 is 2,852 KB, the v2 tarball is 2.6 MB.
-next_action: Await the Minds and Machines desk decision. If the office asks for editable source, upload submission/blind-source.tar.gz (see DECISIONS 2026-08-09 for item types). Confirm the arXiv v2 announcement Monday evening.
-  requirements and run the submission gate
+arxiv_v2: >-
+  submit/7929512, replacement of 2607.26159, announced as v2 (arXiv API lists v2 dated
+  2026-08-09T19:47:36Z and the abstract page shows [v1] and [v2]; checked 2026-10-26). It carries
+  the generalizability-theory positioning found by the submission gate's cold read. The package
+  size was not compared against the 2.6 MB tarball; the version count alone shows the replacement
+  went up.
+next_action: >-
+  Desk rejected by Minds and Machines 2026-10-26 (editors' preliminary assessment, priority
+  screen, no comments; letter in private/). Choose the successor venue: wait for the Springer
+  Transfer Desk suggestions (promised within 48 h of the letter), grade them against the shortlist
+  in DECISIONS 2026-10-26, then write a new venue decision record before any package work. The
+  M&M-facing page one and the self-citation blinding are venue-indexed and come last.
 notes: 'blocked_on is UNCLEAR between two readings. STATUS.md''s own "Next Steps" reads as immediately
   actionable: "Prepare and submit the journal package to Minds and Machines, the primary venue selected
   on 2026-07-24 ... then run the submission gate" -- nothing there names a blocker, which would support
@@ -42,15 +48,25 @@ notes: 'blocked_on is UNCLEAR between two readings. STATUS.md''s own "Next Steps
   "concurrent", "at once", "simultaneous"; zero hits), so read on its own documents the answer would be
   []. That is the documentation gap the batch-10 entries fix: once delegation-assurance is in the registry,
   by-venue/ shows the collision without anyone having to remember to write it down.'
+claim:
+  argues: >-
+    Benchmark inferences do not compose: you cannot aggregate benchmark results into an
+    overall capability score because the underlying constructs are not projectible across
+    the aggregation. arXiv 2607.26159; submitted to *Minds and Machines*.
+  provenance: drafted-from-map
+  claim_updated: 2026-09-04
 ---
 
 # STATUS.md -- AGI Evaluation
+<!-- SUMMARY: non-composition paper, arXiv 2607.26159 v2 live; Minds and Machines desk-rejected it 2026-10-26 (priority screen, no comments); successor venue is Brett's call after the Transfer Desk email · status: rejected, choose venue · updated: 2026-10-26 -->
 
 ## Current State
 
-**Phase:** **New arXiv preprint posted 2026-07-28: arXiv:2607.26159 [cs.AI]** (cross-listed cs.CY, cs.LG), submission `submit/7880182`, announced Tue 28 Jul 2026 18:07:04 UTC. 35 pp, 2 figures, 5 tables. DOI: https://doi.org/10.48550/arXiv.2607.26159. This is a brand-new arXiv identifier, not a replacement of withdrawn v1 (2510.15236), per the 2026-07-23 decision. Comments field states it plainly: "supersedes arXiv:2510.15236, whose homeostatic property-cluster account and proposed centrality-prior and cluster-stability measures are withdrawn. The argument, apparatus, and empirical companion are new." Primary journal venue: *Minds and Machines* — journal submission itself has NOT happened yet, only the arXiv preprint.
+**2026-10-26: desk rejected by *Minds and Machines*.** Submitted 2026-08-09; the editors' preliminary assessment did not send the manuscript to review, and the letter carries no comments. It presents the decision as a matter of the journal's selectivity rather than a judgment of quality. Springer's Transfer Desk will send journal suggestions within 48 hours. Verbatim letter in `private/` (gitignored). Successor venue pending; see DECISIONS 2026-10-26 for the shortlist and what the retarget changes.
 
-**Last updated:** 2026-08-08 (first full top-to-bottom read; manuscript revised, now **ahead of the posted arXiv version** and uncommitted)
+**Phase:** **New arXiv preprint posted 2026-07-28: arXiv:2607.26159 [cs.AI]** (cross-listed cs.CY, cs.LG), submission `submit/7880182`, announced Tue 28 Jul 2026 18:07:04 UTC. 35 pp, 2 figures, 5 tables. DOI: https://doi.org/10.48550/arXiv.2607.26159. This is a brand-new arXiv identifier, not a replacement of withdrawn v1 (2510.15236), per the 2026-07-23 decision. Comments field states it plainly: "supersedes arXiv:2510.15236, whose homeostatic property-cluster account and proposed centrality-prior and cluster-stability measures are withdrawn. The argument, apparatus, and empirical companion are new." Submitted to *Minds and Machines* 2026-08-09 and desk rejected 2026-10-26 (see above); v2 (generalizability-theory positioning) announced August 2026.
+
+**Last updated:** 2026-10-26 (Minds and Machines desk rejection recorded; successor venue pending). Previous: 2026-08-08, first full top-to-bottom read.
 
 > **The working manuscript no longer matches arXiv:2607.26159.** A consistency pass and an
 > argument pass on 2026-08-08 repaired a §3.3 contradiction, a §4.1 dangling reference, and a
@@ -188,11 +204,11 @@ An aggregate can describe its construction sample without supporting a broader i
 
 ## Next Steps
 
-- Prepare and submit the journal package to *Minds and Machines*, the primary venue selected on 2026-07-24; apply its current formatting and disclosure requirements, then run the submission gate.
+- Choose the successor venue after the *Minds and Machines* desk rejection (2026-10-26): grade the Springer Transfer Desk suggestions against the shortlist in DECISIONS 2026-10-26, write a new venue decision record, then re-run the submission gate against the new venue's rules. Page one and the self-citation blinding are venue-indexed; redo them last.
 - Review the requested library scan of *Validity* when it arrives and incorporate it only if it changes the argument or source support.
 - Tag and archive the empirical companion, with a locked environment and a release DOI, when the submission commit is fixed.
 - Post the paper as a new arXiv submission and update public status surfaces when the new identifier exists.
-- **Pending reply:** response pitch sent 2026-08-06 to *Pax Machina* (editors@paxmachinamag.com), offering ~1,500 words answering Nick Caputo's "AGI's Bureaucratic Future". If they accept, draft within two weeks of their go-ahead. No reply by **2026-08-20**, drop it. Draft and rationale: `correspondence/2026-08-06-pax-machina-response-pitch.md`; decision entry 2026-08-06.
+- **Pending reply:** response pitch sent 2026-08-06 to *Pax Machina* (editors@paxmachinamag.com), offering ~1,500 words answering Nick Caputo's "AGI's Bureaucratic Future". After no reply, Brett sent a quick follow-up to editor Ryan Lowe on 2026-08-19. If they accept, draft within two weeks of their go-ahead. No reply by **2026-08-20**, drop it. Draft and rationale: `correspondence/2026-08-06-pax-machina-response-pitch.md`; decision entry 2026-08-06.
 
 ### 2026-07-30 Session Notes (two source hooks, no manuscript change)
 
